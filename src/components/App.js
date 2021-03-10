@@ -1,4 +1,9 @@
 import React from 'react';
+import Header from './Header';
+import customTheme from './styles/theme';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { auth } from './firebase';
+// import Login from './components/Login';
 import {
   ChakraProvider,
   Box,
@@ -7,17 +12,20 @@ import {
   VStack,
   Code,
   Grid,
-  theme,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+import { Logo } from '../Logo';
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={customTheme}>
+      <Box>
+        <Router></Router>
+      </Box>
+      <Box>
+        <Header />
+      </Box>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8}>
             <Logo h="40vmin" pointerEvents="none" />
             <Text>
