@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Box, Flex, Text, Button, Stack } from '@chakra-ui/react';
 
 import Logo from './Logo';
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
+import { ColorModeSwitcher } from './styles/ColorModeSwitcher';
 
 const NavBar = props => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -22,7 +22,7 @@ const NavBar = props => {
 };
 
 const CloseIcon = () => (
-  <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+  <svg width="24" viewBox="0 0 18 18">
     <title>Close</title>
     <path
       fill="white"
@@ -35,7 +35,6 @@ const MenuIcon = () => (
   <svg
     width="24px"
     viewBox="0 0 20 20"
-    xmlns="http://www.w3.org/2000/svg"
     fill="white"
   >
     <title>Menu</title>
@@ -75,8 +74,8 @@ const MenuLinks = ({ isOpen }) => {
         pt={[4, 4, 0, 0]}
       >
         <MenuItem to="/">HOME</MenuItem>
-        <MenuItem to="/how">ABOUT US </MenuItem>
-        <MenuItem to="/faetures">ROOTS APP </MenuItem>
+        <MenuItem to="/about">ABOUT US </MenuItem>
+
         <ColorModeSwitcher />
         <MenuItem to="/signup" isLast>
           <Button
