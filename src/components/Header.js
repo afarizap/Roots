@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Box, Flex, Text, Button, Stack } from '@chakra-ui/react';
+import { Link, Box, Flex, Text, Button, Stack} from '@chakra-ui/react';
 
 import Logo from './Logo';
 import { ColorModeSwitcher } from './styles/ColorModeSwitcher';
@@ -10,7 +10,8 @@ const NavBar = props => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <NavBarContainer {...props}>
+    <Box >
+    <NavBarContainer {...props} bg="#02989E">
       <Logo
         w="100px"
         color={['white', 'white', 'primary.500', 'primary.500']}
@@ -18,6 +19,7 @@ const NavBar = props => {
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
+    </Box>
   );
 };
 
@@ -75,6 +77,7 @@ const MenuLinks = ({ isOpen }) => {
       >
         <MenuItem to="/">HOME</MenuItem>
         <MenuItem to="/about">ABOUT US </MenuItem>
+        <MenuItem to="/about">KEYBOARD </MenuItem>
 
         <ColorModeSwitcher />
         <MenuItem to="/signup" isLast>
@@ -106,7 +109,8 @@ const NavBarContainer = ({ children, ...props }) => {
       mb={8}
       p={8}
       bg={['primary.500', 'primary.500', 'transparent', 'transparent']}
-      color={['white', 'white', 'primary.700', 'primary.700']}
+      bgGradient={['linear(to-r, #141e30, #243b55)']}
+      color={['white', 'white']}
       {...props}
     >
       {children}
