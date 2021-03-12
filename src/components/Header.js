@@ -112,7 +112,7 @@ const NavBarContainer = ({ children, ...props }) => {
       mb={8}
       p={8}
       bg={['primary.500', 'primary.500', 'transparent', 'transparent']}
-      bgGradient={['linear(to-r, #2c3e50, #3498db)']}
+      bgGradient={['linear(to-r, #153e52, #3498db, #153e52)']}
       color={['white', 'white']}
       {...props}
     >

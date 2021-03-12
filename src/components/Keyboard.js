@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, GridItem, Center, Textarea, Button,  Image, SimpleGrid} from '@chakra-ui/react';
+import { Box, Grid, GridItem, Center, Textarea, Button,  Image, SimpleGrid, ButtonGroup} from '@chakra-ui/react';
 
 const Keyboard = () => (
 
@@ -551,9 +551,15 @@ const Keyboard = () => (
           </Box>
         </Button>
       </Box>
-      
     </SimpleGrid>
+
+    <Box>
+    <ButtonGroup mt="30px" variant="outline" spacing="6">
+      <Button colorScheme="blue">Back</Button>
+      <Button colorScheme="blue">Next</Button>
+    </ButtonGroup>
     </Box>
+  </Box>
 );
 
 export default Keyboard;
