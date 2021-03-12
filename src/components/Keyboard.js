@@ -3,13 +3,12 @@ import { Box, Grid, GridItem, Center, Textarea, Button,  Image, SimpleGrid} from
 
 const Keyboard = () => (
 
-  <Box>
+  <Box borderRadius="10px" mx="80px">
     <SimpleGrid
       gap={3}
       columns={12}
       minChildWidth={128}
       overflow="visible"
-      mx='80px'
       border={2}
     > 
 

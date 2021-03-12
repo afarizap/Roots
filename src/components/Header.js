@@ -11,7 +11,9 @@ const NavBar = props => {
 
   return (
     <Box >
-    <NavBarContainer {...props} bg="#02989E">
+    <NavBarContainer {...props}
+	    bg="#113448"
+    >
       <Logo
         w="100px"
         color={['white', 'white', 'primary.500', 'primary.500']}
@@ -78,6 +80,7 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem to="/">HOME</MenuItem>
         <MenuItem to="/about">ABOUT US </MenuItem>
         <MenuItem to="/about">KEYBOARD </MenuItem>
+        
 
         <ColorModeSwitcher />
         <MenuItem to="/signup" isLast>
@@ -109,7 +112,7 @@ const NavBarContainer = ({ children, ...props }) => {
       mb={8}
       p={8}
       bg={['primary.500', 'primary.500', 'transparent', 'transparent']}
-      bgGradient={['linear(to-r, #141e30, #243b55)']}
+      bgGradient={['linear(to-r, #2c3e50, #3498db)']}
       color={['white', 'white']}
       {...props}
     >
