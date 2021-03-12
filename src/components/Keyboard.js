@@ -1,10 +1,10 @@
 import React from 'react';
-import { Box, Grid, GridItem, Center, Textarea, Button, ButtonGroup, Image} from '@chakra-ui/react';
+import { Box, Grid, GridItem, Center, Textarea, Button,  Image} from '@chakra-ui/react';
 
 const Keyboard = () => (
-  <Box mx='80px'>
+  <Box mx='30px'>
     <Center fontSize='40px' alignContent='center' my='20px'>Go!</Center>
-
+  
   <Grid
     templateRows="repeat(12, 1fr)"
     templateColumns="repeat(12, 1fr)"
@@ -22,7 +22,7 @@ const Keyboard = () => (
       <Image
         boxSize="100%"
         w="100%"
-        src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2Fhi.svg?alt=media&token=e74f386f-4e54-455d-879b-f0f69925fec8"
+        src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2Fhello.svg?alt=media&token=510a2b67-828d-4ed8-9cd7-a8ebe60c3a20"
         alt=""
       />
     </Box>
@@ -35,7 +35,7 @@ const Keyboard = () => (
       <Image
         boxSize="100%"
         w="100%"
-        src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FGoodbye.svg?alt=media&token=184231b8-444c-4b6f-be32-634ce8b779a5"
+        src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2Fgoodbye.svg?alt=media&token=a2e3ed03-d744-41fd-889b-e8ad34dc78c3"
         alt=""
       />
     </Box>
