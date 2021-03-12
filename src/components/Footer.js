@@ -22,6 +22,16 @@ const Foot = () => (
 			alignContent="center"
     > 
 			<Box wordBreak="break-word" minHeight="128px">
+            <Image
+              px="1"
+              boxSize="100%"
+              w="60%"
+              src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2Ficon.svg?alt=media&token=3c13a412-9d48-4191-a72a-cdd522e4ccd7"
+              alt=""
+            />
+      </Box>
+
+			<Box wordBreak="break-word" minHeight="128px">
         <Text alignContent='center' fontSize="xl">About Roots</Text>
 				<Text alignContent='center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
       </Box>
