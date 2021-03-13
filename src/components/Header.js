@@ -13,7 +13,7 @@ const NavBar = props => {
     <NavBarContainer {...props}>
       <Logo
         w="100px"
-        color={['white', 'white', 'primary.500', 'primary.500']}
+        color={['white', 'white', '#25383C', '#25383C']}
       />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
@@ -73,7 +73,7 @@ const MenuLinks = ({ isOpen }) => {
         direction={['column', 'row', 'row', 'row']}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="/">HOME</MenuItem>
+        <MenuItem to="/home">HOME</MenuItem>
         <MenuItem to="/aboutus">ABOUT US</MenuItem>
         <MenuItem to="/team">TEAM</MenuItem>
         <MenuItem to="/keyboard">KEYBOARD</MenuItem>
@@ -106,9 +106,7 @@ const NavBarContainer = ({ children, ...props }) => {
       wrap="wrap"
       w="100%"
       p={8}
-      bg={['primary.500', 'primary.500', 'transparent', 'transparent']}
-      // bgGradient="linear(to-r, #aee1e1, #fcd1d1)"
-      // borderBottom="solid #E9E9E9"
+      bg={['#25383C', '#25383C', 'transparent', 'transparent']}
       {...props}
     >
       {children}

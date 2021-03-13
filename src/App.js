@@ -5,7 +5,7 @@ import Divtext from './components/Divtext';
 import Sidebar from './components/Sidebar';
 import Createpicto from './components/Createpicto';
 import Keyboard from './components/Keyboard';
-import Foot from './components/Footer';
+import Footer from './components/Footer';
 import customTheme from './components/styles/theme';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {
@@ -32,7 +32,7 @@ function App() {
           <Header />
           {/* <Login /> */}
           <Switch>
-            <Route exact path="/"> {/* Home Page */}
+            <Route exact path="/home"> {/* Home Page */}
               <Hero />
             </Route>
 
@@ -52,7 +52,7 @@ function App() {
               <Keyboard />
             </Route>
           </Switch>
-          <Foot />
+          <Footer />
         </Router>
       </Box>
     </ChakraProvider>
