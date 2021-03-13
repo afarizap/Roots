@@ -34,15 +34,17 @@ function App() {
             <Route exact path="/"></Route>
           </Switch>
           <Center mb="40px" fontSize="40px" alignContent='center'>GO!</Center>
+          <Divtext />
           <Grid
           templateRows="repeat(1, 1fr)"
           templateColumns="repeat(12, 1fr)"
-          my="2.5"
+          gap={4}
+          mx="80px"
+          my="4"
           >
           <GridItem colSpan={6}><Sidebar /></GridItem>
           <GridItem colSpan={6}><Createpicto /></GridItem>
           </Grid>
-          <Divtext />
           <Keyboard />
           <Foot />
         </Router>

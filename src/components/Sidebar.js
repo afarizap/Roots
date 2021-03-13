@@ -19,7 +19,7 @@ function Sidebar() {
   
     return (
       <>
-      <Box mx="80px">
+      <Box>
         <Button width="100%" colorScheme="green" onClick={onOpen}>
           Discover
         </Button>

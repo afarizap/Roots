@@ -9,7 +9,6 @@ const Divtext = () => (
       minChildWidth={128}
       overflow="visible"
       mx='80px'
-      mb="30px"
       border={2}
     > 
       <Box borderRadius="10px" boxShadow="dark-lg" bg="tomato" wordBreak="break-word" minHeight="128px">
