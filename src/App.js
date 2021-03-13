@@ -1,4 +1,5 @@
 import React from 'react';
+import Hero from './components/Hero';
 import Header from './components/Header';
 import Divtext from './components/Divtext';
 import Sidebar from './components/Sidebar';
@@ -29,6 +30,7 @@ function App() {
       <Box>
         <Router>
           <Header />
+          <Hero />
           {/* <Login /> */}
           <Switch>
             <Route exact path="/"></Route>

@@ -5,9 +5,9 @@ import { ColorModeSwitcher } from './styles/ColorModeSwitcher';
 
 const Foot = () => (
     <Box
-		bg={['#E9E9E9', '#E9E9E9', '#E9E9E9', '#E9E9E9']}
+		bg={['#aee1e1']}
 		borderTop="solid #E9E9E9"
-		color="#393939"
+		color="#325860"
     mt={10}
     minHeight="100px"
     >

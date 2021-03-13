@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Box, Flex, Text, Button, Stack} from '@chakra-ui/react';
+import { Link, Box, Flex, Text, Button, Stack } from '@chakra-ui/react';
 
 import Logo from './Logo';
 import { ColorModeSwitcher } from './styles/ColorModeSwitcher';
@@ -10,10 +10,7 @@ const NavBar = props => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Box >
-    <NavBarContainer {...props}
-	    bg="#113448"
-    >
+    <NavBarContainer {...props} bg={['#aee1e1']}>
       <Logo
         w="100px"
         color={['white', 'white', 'primary.500', 'primary.500']}
@@ -21,7 +18,6 @@ const NavBar = props => {
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
-    </Box>
   );
 };
 
@@ -78,19 +74,18 @@ const MenuLinks = ({ isOpen }) => {
         pt={[4, 4, 0, 0]}
       >
         <MenuItem to="/">HOME</MenuItem>
-        <MenuItem to="/about">ABOUT US </MenuItem>
-        <MenuItem to="/about">KEYBOARD </MenuItem>
-        
+        <MenuItem to="/about">ABOUT US</MenuItem>
+        <MenuItem to="/about">KEYBOARD</MenuItem>
 
         <ColorModeSwitcher />
         <MenuItem to="/signup" isLast>
           <Button
             size="sm"
             rounded="md"
-            color={['primary.500', 'primary.500', 'white', 'white']}
-            bg={['white', 'white', 'primary.500', 'primary.500']}
+            color={['white']}
+            bg={['#25383C']}
             _hover={{
-              bg: ['primary.100', 'primary.100', 'primary.600', 'primary.600'],
+              bg: ['#325860'],
             }}
           >
             LOGIN
@@ -109,11 +104,12 @@ const NavBarContainer = ({ children, ...props }) => {
       justify="space-between"
       wrap="wrap"
       w="100%"
-      mb={8}
+      mb={4}
       p={8}
       bg={['primary.500', 'primary.500', 'transparent', 'transparent']}
-      bgGradient={['linear(to-r, #153e52, #3498db, #153e52)']}
-      color={['white', 'white']}
+      // bgGradient="linear(to-r, #aee1e1, #fcd1d1)"
+      color={['#25383C']}
+      // borderBottom="solid #E9E9E9"
       {...props}
     >
       {children}

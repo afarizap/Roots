@@ -11,7 +11,7 @@ const Divtext = () => (
       mx='80px'
       border={2}
     > 
-      <Box borderRadius="10px" boxShadow="dark-lg" bg="tomato" wordBreak="break-word" minHeight="128px">
+      <Box borderRadius="10px" boxShadow="dark-lg" bg="#e2d5d5" wordBreak="break-word" minHeight="128px">
         <Textarea borderRadius="10px" h="100%" placeholder="Type something..." />
       </Box>
     </SimpleGrid>
