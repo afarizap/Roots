@@ -73,7 +73,7 @@ const MenuLinks = ({ isOpen }) => {
         direction={['column', 'row', 'row', 'row']}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="/home">HOME</MenuItem>
+        <MenuItem to="/">HOME</MenuItem>
         <MenuItem to="/aboutus">ABOUT US</MenuItem>
         <MenuItem to="/team">TEAM</MenuItem>
         <MenuItem to="/keyboard">KEYBOARD</MenuItem>

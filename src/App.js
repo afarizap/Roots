@@ -32,7 +32,7 @@ function App() {
           <Header />
           {/* <Login /> */}
           <Switch>
-            <Route exact path="/home"> {/* Home Page */}
+            <Route exact path="/"> {/* Home Page */}
               <Hero />
             </Route>
 
