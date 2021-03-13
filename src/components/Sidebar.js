@@ -26,6 +26,7 @@ function Sidebar() {
         <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay>
             <DrawerContent>
+              <DrawerCloseButton />
               <DrawerHeader borderBottomWidth="1px" textAlign="center">Topics</DrawerHeader>
               <DrawerBody>
                   <Box>
