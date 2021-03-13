@@ -30,24 +30,28 @@ function App() {
       <Box>
         <Router>
           <Header />
-          <Hero />
           {/* <Login /> */}
           <Switch>
-            <Route exact path="/"></Route>
+            <Route exact path="/home"> {/* Home Page */}
+              <Hero />
+            </Route>
+
+            <Route exact path="/aboutus"> {/* About Us Page */}
+            </Route>
+
+            <Route exact path="/team"> {/* Team Page */}
+            </Route>
+
+            <Route exact path="/keyboard"> {/* Keyboard Page */}
+              <Center mb="40px" fontSize="40px" alignContent='center'>GO!</Center>
+              <Divtext />
+              <Grid templateRows="repeat(1, 1fr)" templateColumns="repeat(12, 1fr)" gap={4} mx="80px" my="4">
+                <GridItem colSpan={6}><Sidebar /></GridItem>
+                <GridItem colSpan={6}><Createpicto /></GridItem>
+              </Grid>
+              <Keyboard />
+            </Route>
           </Switch>
-          <Center mb="40px" fontSize="40px" alignContent='center'>GO!</Center>
-          <Divtext />
-          <Grid
-          templateRows="repeat(1, 1fr)"
-          templateColumns="repeat(12, 1fr)"
-          gap={4}
-          mx="80px"
-          my="4"
-          >
-          <GridItem colSpan={6}><Sidebar /></GridItem>
-          <GridItem colSpan={6}><Createpicto /></GridItem>
-          </Grid>
-          <Keyboard />
           <Foot />
         </Router>
       </Box>
