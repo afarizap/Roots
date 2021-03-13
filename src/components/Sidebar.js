@@ -1,18 +1,15 @@
 import React from 'react';
-import { Box, Grid, GridItem, Center, Textarea, Button,  Image, Section,
-    Drawer,
-    DrawerBody,
-    DrawerFooter,
-    DrawerHeader,
-    DrawerOverlay,
-    DrawerContent,
-    DrawerCloseButton,
-    useDisclosure,
-    RadioGroup,
-    Stack,
-    Radio,
-    FormLabel,
-    Select,
+import { Box, Button,
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  useDisclosure,
+  FormLabel,
+  Select,
     } from '@chakra-ui/react';
 import { box } from 'tweetnacl';
 
@@ -23,7 +20,7 @@ function Sidebar() {
     return (
       <>
       <Box mx="80px">
-        <Button my="15px" width="50%" colorScheme="blue" onClick={onOpen}>
+        <Button width="100%" colorScheme="green" onClick={onOpen}>
           Discover
         </Button>
         <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>

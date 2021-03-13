@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Box, Center, SimpleGrid, Button, Image, Text} from '@chakra-ui/react';
+import { Link, Box, Center, SimpleGrid, Image, Text} from '@chakra-ui/react';
 
 import { ColorModeSwitcher } from './styles/ColorModeSwitcher';
 
@@ -36,7 +36,7 @@ const Foot = () => (
 				<Text alignContent='center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
       </Box>
 
-			<Box ml="70px" wordBreak="break-word" minHeight="128px">
+			<Box ml="60px" wordBreak="break-word" minHeight="128px">
 				<Text alignContent='center' fontSize="xl">Links</Text>
 				<Text><Link>rootblablabla.com</Link></Text> 
 				<Text><Link>Terms & Conditions</Link></Text> 

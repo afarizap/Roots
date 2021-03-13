@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, GridItem, Center, Textarea, Button,  Image, SimpleGrid, ButtonGroup} from '@chakra-ui/react';
+import { Box, Center, Button,  Image, SimpleGrid, ButtonGroup} from '@chakra-ui/react';
 
 const Keyboard = () => (
 
