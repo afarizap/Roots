@@ -11,9 +11,7 @@ const NavBar = props => {
 
   return (
     <NavBarContainer {...props}>
-      <Logo
-        w="100px"
-        color={['white', 'white', '#25383C', '#25383C']}
+      <Logo w="100px" ColorModeSwitcher={['white', 'white', '#25383C', '#25383C']}
       />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
