@@ -10,7 +10,7 @@ const NavBar = props => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <NavBarContainer {...props} bg={['#aee1e1']}>
+    <NavBarContainer {...props}>
       <Logo
         w="100px"
         color={['white', 'white', 'primary.500', 'primary.500']}
@@ -75,6 +75,7 @@ const MenuLinks = ({ isOpen }) => {
       >
         <MenuItem to="/">HOME</MenuItem>
         <MenuItem to="/about">ABOUT US</MenuItem>
+        <MenuItem to="/about">TEAM</MenuItem>
         <MenuItem to="/about">KEYBOARD</MenuItem>
 
         <ColorModeSwitcher />
@@ -104,11 +105,9 @@ const NavBarContainer = ({ children, ...props }) => {
       justify="space-between"
       wrap="wrap"
       w="100%"
-      mb={4}
       p={8}
       bg={['primary.500', 'primary.500', 'transparent', 'transparent']}
       // bgGradient="linear(to-r, #aee1e1, #fcd1d1)"
-      color={['#25383C']}
       // borderBottom="solid #E9E9E9"
       {...props}
     >
