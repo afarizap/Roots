@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Box, Flex, Text, Button, Stack } from '@chakra-ui/react';
+import { Link, Box, Flex, Text, Button, Stack, Image} from '@chakra-ui/react';
 
 import Logo from './Logo';
 import { ColorModeSwitcher } from './styles/ColorModeSwitcher';
@@ -11,7 +11,7 @@ const NavBar = props => {
 
   return (
     <NavBarContainer {...props}>
-      <Logo w="100px" ColorModeSwitcher={['white', 'white', '#25383C', '#25383C']}
+      <Logo w="200px" ColorModeSwitcher={['white', 'white', '#25383C', '#25383C']}
       />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
@@ -77,17 +77,30 @@ const MenuLinks = ({ isOpen }) => {
         <MenuItem to="/keyboard">KEYBOARD</MenuItem>
 
         <ColorModeSwitcher />
-        <MenuItem to="/signup" isLast>
+        <MenuItem to="/login" isLast>
           <Button
             size="sm"
             rounded="md"
-            color={['white']}
-            bg={['#25383C']}
+            color={['black']}
+            bg={['#40BF5A']}
             _hover={{
               bg: ['#325860'],
             }}
           >
             LOGIN
+          </Button>
+        </MenuItem>
+        <MenuItem to="/register" isLast>
+          <Button
+            size="sm"
+            rounded="md"
+            color={['black']}
+            bg={['#2EDDA7']}
+            _hover={{
+              bg: ['#325860'],
+            }}
+          >
+            REGISTER
           </Button>
         </MenuItem>
       </Stack>
@@ -105,6 +118,9 @@ const NavBarContainer = ({ children, ...props }) => {
       w="100%"
       p={8}
       bg={['#25383C', '#25383C', 'transparent', 'transparent']}
+      borderBottom="solid 1px #BDDEE5"
+      // position="fixed"
+      // top="1"
       {...props}
     >
       {children}

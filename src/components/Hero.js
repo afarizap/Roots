@@ -1,4 +1,5 @@
 import React from "react"
+import Head from 'next/head';
 import { Link } from "react-router-dom"
 import PropTypes from "prop-types"
 import {
@@ -31,9 +32,16 @@ import {
               color={'white'}
               fontWeight={700}
               lineHeight={1.2}
+              id="js-rotating"
               fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-              eiusmod tempor
+              YOU'RE NOT ALONE
+            </Text>
+            <Text
+              color={'white'}
+              fontWeight={300}
+              lineHeight={1.2}
+              fontSize={useBreakpointValue({ base: '2xl', md: '3xl' })}>
+              Roots is an application that allows children with autism problems to communicate daily with their caregivers and also develop language skills
             </Text>
             <Stack direction={'row'}>
               <Button
@@ -48,7 +56,7 @@ import {
                 rounded={'full'}
                 color={'white'}
                 _hover={{ bg: 'whiteAlpha.500' }}>
-                Show me more
+                Try board
               </Button>
             </Stack>
           </Stack>
@@ -56,3 +64,5 @@ import {
       </Flex>
     );
   }
+
+  

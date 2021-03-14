@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './components/Hero';
+import KeyboardIntro from './components/KeyboardIntro';
 import Header from './components/Header';
 import Divtext from './components/Divtext';
 import Sidebar from './components/Sidebar';
@@ -34,6 +35,7 @@ function App() {
           <Switch>
             <Route exact path="/home"> {/* Home Page */}
               <Hero />
+              <KeyboardIntro />
             </Route>
 
             <Route exact path="/aboutus"> {/* About Us Page */}
@@ -43,7 +45,7 @@ function App() {
             </Route>
 
             <Route exact path="/keyboard"> {/* Keyboard Page */}
-              <Center mb="40px" fontSize="40px" alignContent='center'>GO!</Center>
+              <Center my="40px" fontSize="40px" alignContent='center'>GO!</Center>
               <Divtext />
               <Grid templateRows="repeat(1, 1fr)" templateColumns="repeat(12, 1fr)" gap={4} mx="80px" my="4">
                 <GridItem colSpan={6}><Sidebar /></GridItem>
