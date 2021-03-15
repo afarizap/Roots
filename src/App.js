@@ -10,7 +10,7 @@ import Divtext from './components/Divtext';
 import Sidebar from './components/Sidebar';
 import Createpicto from './components/Createpicto';
 import customTheme from './components/styles/theme';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import {
   ChakraProvider,
   ThemeProvider,
@@ -36,6 +36,9 @@ function App() {
           <Header />
           {/* <Login /> */}
           <Switch>
+            <Route exact path="/"> {/* Home Page */}
+              <Redirect to="/home" />
+            </Route>
             <Route exact path="/home"> {/* Home Page */}
               <Hero />
               <KeyboardIntro />
