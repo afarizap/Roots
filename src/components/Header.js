@@ -118,7 +118,7 @@ const NavBarContainer = ({ children, ...props }) => {
       w="100%"
       p={8}
       bg={['#25383C', '#25383C', 'transparent', 'transparent']}
-      borderBottom="solid 1px #BDDEE5"
+      my="-25px"
       // position="fixed"
       // top="1"
       {...props}

@@ -1,12 +1,14 @@
 import React from 'react';
-import Hero from './components/Hero';
-import KeyboardIntro from './components/KeyboardIntro';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import Team from './components/Team';
+import AboutUs from './components/AboutUs';
+import Hero from './components/Hero';
+import Keyboard from './components/Keyboard';
+import KeyboardIntro from './components/KeyboardIntro';
 import Divtext from './components/Divtext';
 import Sidebar from './components/Sidebar';
 import Createpicto from './components/Createpicto';
-import Keyboard from './components/Keyboard';
-import Footer from './components/Footer';
 import customTheme from './components/styles/theme';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {
@@ -23,6 +25,7 @@ import {
   ButtonGroup,
   Stack,
   GridItem,
+  Container,
 } from '@chakra-ui/react';
 
 function App() {
@@ -39,18 +42,21 @@ function App() {
             </Route>
 
             <Route exact path="/aboutus"> {/* About Us Page */}
+              <AboutUs />
             </Route>
 
             <Route exact path="/team"> {/* Team Page */}
+              <Team />
             </Route>
 
             <Route exact path="/keyboard"> {/* Keyboard Page */}
-              <Center my="40px" fontSize="40px" alignContent='center'>GO!</Center>
               <Divtext />
-              <Grid templateRows="repeat(1, 1fr)" templateColumns="repeat(12, 1fr)" gap={4} mx="80px" my="4">
-                <GridItem colSpan={6}><Sidebar /></GridItem>
-                <GridItem colSpan={6}><Createpicto /></GridItem>
-              </Grid>
+              <Container maxW={'6xl'}>
+                <Grid templateRows="repeat(1, 1fr)" templateColumns="repeat(12, 1fr)" gap={4} my="4">
+                  <GridItem colSpan={6}><Sidebar /></GridItem>
+                  <GridItem colSpan={6}><Createpicto /></GridItem>
+                </Grid>
+              </Container>
               <Keyboard />
             </Route>
           </Switch>

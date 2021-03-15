@@ -25,6 +25,7 @@ import {
         <VStack
           w={'full'}
           justify={'center'}
+          align="left"
           px={useBreakpointValue({ base: 4, md: 8 })}
           bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
           <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
@@ -40,7 +41,7 @@ import {
               color={'white'}
               fontWeight={300}
               lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: '2xl', md: '3xl' })}>
+              fontSize={useBreakpointValue({ base: '1xl', md: '2xl' })}>
               Roots is an application that allows children with autism problems to communicate daily with their caregivers and also develop language skills
             </Text>
             <Stack direction={'row'}>

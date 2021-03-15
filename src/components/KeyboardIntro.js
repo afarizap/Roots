@@ -16,7 +16,7 @@ import {
   
   export default function KeyboardIntro() {
     return (
-      <Container maxW={'7xl'}>
+      <Container maxW={'6xl'}>
         <Stack
           align={'center'}
           spacing={{ base: 8, md: 10 }}
