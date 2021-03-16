@@ -9,7 +9,8 @@ function Keyboard() {
   const [words] = useCollectionData(db.collection('pictos'));
 
 if (words) {
-  return ( 
+  return (
+    <Container maxW={'6xl'}>
     <SimpleGrid gap={3}
       columns={12}
       minChildWidth={128}
@@ -43,6 +44,7 @@ if (words) {
         </Box>
     ))}
     </SimpleGrid>
+    </Container>
   );
 }
 
