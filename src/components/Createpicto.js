@@ -15,13 +15,45 @@ import { Box, Button,
   InputGroup,
   InputLeftAddon,
     } from '@chakra-ui/react';
-import { box } from 'tweetnacl';
+import { db } from '../features/firebase';
 
-function Createpicto() {
+
+
+const initialFormData = Object.freeze({
+      type: "",
+      theme: "",
+      word: "",
+      imgURL: "",
+    })
+
+  const CreatePicto = () => {
+    const [formData, updateFormData] = React.useState(initialFormData);
+
+    const handleChange = (e) => {
+      updateFormData({
+        ...formData,
+        [e.target.name]: e.target.value.trim()
+      });
+    };
+
+   const handleSubmit = (e) => {
+      e.preventDefault()
+      console.log(formData);
+      // ... submit to API or something
+      console.log(formData.word, formData.theme, formData.imgURL, formData.type)
+       db.collection("pictos").add({
+         word: formData.word,
+         type: formData.type,
+         soundURL: "",
+         imgURL: formData.imgURL,
+         categoty: formData.theme,
+       })
+
+    };
+
     const { isOpen, onOpen, onClose } = useDisclosure()
     const firstField = React.useRef()
-    const [placement, setPlacement] = React.useState("right")
-  
+
     return (
       <>
       <Box>
@@ -33,7 +65,6 @@ function Createpicto() {
         placement="right"
         initialFocusRef={firstField}
         onClose={onClose}>
-          
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton />
@@ -45,18 +76,25 @@ function Createpicto() {
               <Stack spacing="24px">
                 <Box>
                   <FormLabel htmlFor="owner">Select Category Or</FormLabel>
-                  <Select id="owner" defaultValue="Choose">
+                  <Select id="owner" defaultValue="Choose" 
+                         name="type"
+                         onChange={handleChange}
+                         >
                         <option value="Choose">Choose</option>
-                        <option value="School">Verbs</option>
-                        <option value="Bathroom">Nouns</option>
-                        <option value="Places">Adjectives</option>
-                        <option value="Things">Pronouns</option>
+                        <option value="verbs">Verbs</option>
+                        <option value="nouns">Nouns</option>
+                        <option value="adjetives">Adjectives</option>
+                        <option value="pronouns">Pronouns</option>
                   </Select>
                 </Box>
 
                 <Box>
                   <FormLabel htmlFor="owner">Select Theme</FormLabel>
-                  <Select id="owner" defaultValue="Choose">
+                  <Select id="owner"
+                        defaultValue="Choose"
+                        name="theme"
+                        onChange={handleChange}
+                        >
                         <option value="Choose">Choose</option>
                         <option value="School">School</option>
                         <option value="Bathroom">Bathroom</option>
@@ -75,6 +113,8 @@ function Createpicto() {
                     ref={firstField}
                     id="title"
                     placeholder="Please enter title"
+                    name="word"
+                    onChange={handleChange}
                   />
                 </Box>
 
@@ -86,6 +126,8 @@ function Createpicto() {
                       type="url"
                       id="url"
                       placeholder="Please enter image"
+                      name="imgURL"
+                      onChange={handleChange}
                     />
                   </InputGroup>
                 </Box>
@@ -96,7 +138,7 @@ function Createpicto() {
               <Button variant="outline" mr={3} onClick={onClose}>
                 Cancel
               </Button>
-              <Button colorScheme="blue">Submit</Button>
+              <Button colorScheme="blue" onClick={handleSubmit}>Submit</Button>
             </DrawerFooter>
           </DrawerContent>
         </DrawerOverlay>
@@ -106,4 +148,6 @@ function Createpicto() {
     )
 }
 
-export default Createpicto;
+
+
+export default CreatePicto;
