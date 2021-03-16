@@ -27,7 +27,7 @@ if (words) {
                     px="2"
                     boxSize="100%"
                     w="100%"
-                    src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2Fhello.svg?alt=media&token=510a2b67-828d-4ed8-9cd7-a8ebe60c3a20"
+                    src={words.imgURL}
                     alt=""
                   />
                   <Center alignContent='center' m={1}>{words.word}</Center>
