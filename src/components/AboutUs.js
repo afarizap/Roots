@@ -1,6 +1,5 @@
 import React from 'react';
 import {Textarea, Heading,
-  Avatar,
   Box,
   Center,
   Image,

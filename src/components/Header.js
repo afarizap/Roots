@@ -117,7 +117,7 @@ const NavBarContainer = ({ children, ...props }) => {
       wrap="wrap"
       w="100%"
       p={8}
-      bg={['#25383C', '#25383C', 'transparent', 'transparent']}
+      bg={['#197C5E', '#197C5E', 'transparent', 'transparent']}
       my="-25px"
       // position="fixed"
       // top="1"

@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Team from './components/Team';
@@ -30,43 +31,46 @@ import {
 
 function App() {
   return (
-    <ChakraProvider theme={customTheme}>
-      <Box>
-        <Router>
-          <Header />
-          {/* <Login /> */}
-          <Switch>
-            <Route exact path="/"> {/* Home Page */}
-              <Redirect to="/home" />
-            </Route>
-            <Route exact path="/home"> {/* Home Page */}
-              <Hero />
-              <KeyboardIntro />
-            </Route>
+    <div>
 
-            <Route exact path="/aboutus"> {/* About Us Page */}
-              <AboutUs />
-            </Route>
+      <ChakraProvider theme={customTheme}>
+        <Box>
+          <Router>
+            <Header />
+            {/* <Login /> */}
+            <Switch>
+              <Route exact path="/"> {/* Home Page */}
+                <Redirect to="/home" />
+              </Route>
+              <Route exact path="/home"> {/* Home Page */}
+                <Hero />
+                <KeyboardIntro />
+              </Route>
 
-            <Route exact path="/team"> {/* Team Page */}
-              <Team />
-            </Route>
+              <Route exact path="/aboutus"> {/* About Us Page */}
+                <AboutUs />
+              </Route>
 
-            <Route exact path="/keyboard"> {/* Keyboard Page */}
-              <Divtext />
-              <Container maxW={'6xl'}>
-                <Grid templateRows="repeat(1, 1fr)" templateColumns="repeat(12, 1fr)" gap={4} my="4">
-                  <GridItem colSpan={6}><Sidebar /></GridItem>
-                  <GridItem colSpan={6}><Createpicto /></GridItem>
-                </Grid>
-              </Container>
-              <Keyboard />
-            </Route>
-          </Switch>
-          <Footer />
-        </Router>
-      </Box>
-    </ChakraProvider>
+              <Route exact path="/team"> {/* Team Page */}
+                <Team />
+              </Route>
+
+              <Route exact path="/keyboard"> {/* Keyboard Page */}
+                <Divtext />
+                <Container maxW={'6xl'}>
+                  <Grid templateRows="repeat(1, 1fr)" templateColumns="repeat(12, 1fr)" gap={4} my="4">
+                    <GridItem colSpan={6}><Sidebar /></GridItem>
+                    <GridItem colSpan={6}><Createpicto /></GridItem>
+                  </Grid>
+                </Container>
+                <Keyboard />
+              </Route>
+            </Switch>
+            <Footer />
+          </Router>
+        </Box>
+      </ChakraProvider>
+    </div>
   );
 }
 

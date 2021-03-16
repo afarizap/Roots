@@ -17,8 +17,12 @@ import {
   SimpleGrid,
   } from '@chakra-ui/react';
 
+  import {Button as StyleButton} from 'react-bootstrap'; // Replace component with another name
+
 const Team = () => (
     <Container maxW={'6xl'}>
+
+      
         <Stack
         as={Box}
         textAlign={'center'}
@@ -43,7 +47,7 @@ const Team = () => (
             </Text>
           </Heading>
           <Stack
-          direction={'row'}>
+           direction="row">
 
           <SimpleGrid
                 gap={5}
@@ -138,7 +142,7 @@ const Team = () => (
                     />
                   </Flex>
 
-                  <Box p={6}>
+                  <Box p={7}>
                     <Stack spacing={0} align={'center'} mb={5}>
                       <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
                         Alison Quintero

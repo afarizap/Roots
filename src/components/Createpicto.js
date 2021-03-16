@@ -32,8 +32,8 @@ function Createpicto() {
         isOpen={isOpen}
         placement="right"
         initialFocusRef={firstField}
-        onClose={onClose}
-      >
+        onClose={onClose}>
+          
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton />
