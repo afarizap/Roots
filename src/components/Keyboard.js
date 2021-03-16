@@ -48,7 +48,7 @@ if (words) {
   );
 }
 
-return( <Container>Loading please wait...</Container>
+return( <Container align="center" padding="100px">Loading please wait...</Container>
 );
 }
 

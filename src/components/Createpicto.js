@@ -18,7 +18,6 @@ import { Box, Button,
 import { db } from '../features/firebase';
 
 
-
 const initialFormData = Object.freeze({
       type: "",
       theme: "",
@@ -58,7 +57,7 @@ const initialFormData = Object.freeze({
       <>
       <Box>
         <Button width="100%" colorScheme="green" onClick={onOpen}>
-        Create Pictogram
+        Crear Mi Pictograma
         </Button>
         <Drawer
         isOpen={isOpen}
@@ -69,63 +68,68 @@ const initialFormData = Object.freeze({
           <DrawerContent>
             <DrawerCloseButton />
             <DrawerHeader borderBottomWidth="1px">
-              My Own Picto!
+              Mi Picto!
             </DrawerHeader>
 
             <DrawerBody>
               <Stack spacing="24px">
                 <Box>
-                  <FormLabel htmlFor="owner">Select Category Or</FormLabel>
+                  <FormLabel htmlFor="owner">Categoría</FormLabel>
                   <Select id="owner" defaultValue="Choose" 
                          name="type"
                          onChange={handleChange}
                          >
-                        <option value="Choose">Choose</option>
-                        <option value="verbs">Verbs</option>
-                        <option value="nouns">Nouns</option>
-                        <option value="adjetives">Adjectives</option>
-                        <option value="pronouns">Pronouns</option>
+                        <option value="Choose">Elegir</option>
+                        <option value="verbs">Sustantivo</option>
+                        <option value="nouns">Adjetivo</option>
+                        <option value="adjetives">Verbo</option>
+                        <option value="pronouns">Adverbio</option>
+                        <option value="verbs">Pronombre</option>
+                        <option value="nouns">Preposición</option>
+                        <option value="adjetives">Conjunción</option>
+                        <option value="pronouns">Interjección</option>
+                        <option value="pronouns">Artículo</option>
                   </Select>
                 </Box>
 
                 <Box>
-                  <FormLabel htmlFor="owner">Select Theme</FormLabel>
+                  <FormLabel htmlFor="owner">Tema</FormLabel>
                   <Select id="owner"
                         defaultValue="Choose"
                         name="theme"
                         onChange={handleChange}
                         >
-                        <option value="Choose">Choose</option>
-                        <option value="School">School</option>
-                        <option value="Bathroom">Bathroom</option>
-                        <option value="Places">Places</option>
-                        <option value="Things">Things</option>
-                        <option value="Animals">Animals</option>
-                        <option value="Household">Household</option>
-                        <option value="Food">Food</option>
-                        <option value="Sports">Sports</option>
+                        <option value="Choose">Elegir</option>
+                        <option value="School">Interacciones</option>
+                        <option value="Sports">Hogar</option>
+                        <option value="Things">Dormitorio</option>
+                        <option value="Bathroom">Baño</option>
+                        <option value="Places">Escuela</option>
+                        <option value="Animals">Comida</option>
+                        <option value="Household">Bebidas</option>
+                        <option value="School">Animales Acuaticos</option>
                   </Select>
                 </Box>
 
                 <Box>
-                  <FormLabel htmlFor="title">Title</FormLabel>
+                  <FormLabel htmlFor="title">Titulo</FormLabel>
                   <Input
                     ref={firstField}
                     id="title"
-                    placeholder="Please enter title"
+                    placeholder="Ingrese el título"
                     name="word"
                     onChange={handleChange}
                   />
                 </Box>
 
                 <Box>
-                  <FormLabel htmlFor="url">Image</FormLabel>
+                  <FormLabel htmlFor="url">Imagen Svg</FormLabel>
                   <InputGroup>
                     <InputLeftAddon>http://</InputLeftAddon>
                     <Input
                       type="url"
                       id="url"
-                      placeholder="Please enter image"
+                      placeholder="Ingrese la dirección"
                       name="imgURL"
                       onChange={handleChange}
                     />
@@ -136,9 +140,9 @@ const initialFormData = Object.freeze({
 
             <DrawerFooter borderTopWidth="1px">
               <Button variant="outline" mr={3} onClick={onClose}>
-                Cancel
+                Cancelar
               </Button>
-              <Button colorScheme="blue" onClick={handleSubmit}>Submit</Button>
+              <Button colorScheme="blue" onClick={handleSubmit}>Enviar</Button>
             </DrawerFooter>
           </DrawerContent>
         </DrawerOverlay>

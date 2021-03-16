@@ -25,7 +25,7 @@ const Footer = () => (
               	px="1"
               	boxSize="100%"
               	w="60%"
-              	src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2Ficon.svg?alt=media&token=3c13a412-9d48-4191-a72a-cdd522e4ccd7"
+              	src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FInicio%2Ficon.svg?alt=media&token=07f93f67-6f9e-4f14-ba7d-8bfcd689ee5f"
               	alt=""
             	/>
       		</Box>

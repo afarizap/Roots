@@ -6,7 +6,7 @@ import Team from './components/Team';
 import AboutUs from './components/AboutUs';
 import Hero from './components/Hero';
 import Keyboard from './components/Keyboard';
-import KeyboardIntro from './components/KeyboardIntro';
+import Home from './components/Home';
 import Divtext from './components/Divtext';
 import Sidebar from './components/Sidebar';
 import Createpicto from './components/Createpicto';
@@ -44,7 +44,7 @@ function App() {
               </Route>
               <Route exact path="/home"> {/* Home Page */}
                 <Hero />
-                <KeyboardIntro />
+                <Home />
               </Route>
 
               <Route exact path="/aboutus"> {/* About Us Page */}

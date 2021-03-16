@@ -27,7 +27,7 @@ const Divtext = () => (
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
-            Go
+            Vamos
             <Text as={'span'} color={'#2EDDA7'}>
             !
             </Text>

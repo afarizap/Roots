@@ -78,7 +78,7 @@ const Team = () => (
                     <Avatar
                       size={'xl'}
                       src={
-                        'https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FTeam%2Fmanuel.png?alt=media&token=04de508d-fbfa-4d64-b579-981811be7636'
+                        'https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FEquipo%2Fmanuel.png?alt=media&token=0a689f74-1962-44d7-8790-972abbfd383c'
                       }
                       alt={'Author'}
                       css={{
@@ -133,7 +133,7 @@ const Team = () => (
                     <Avatar
                       size={'xl'}
                       src={
-                        'https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FTeam%2Falison.jpg?alt=media&token=68975e6f-13f6-4adb-a3be-316a97632411'
+                        'https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FEquipo%2Falison.jpg?alt=media&token=7d6c9984-8d38-469e-a856-b339e1abe536'
                       }
                       alt={'Author'}
                       css={{
@@ -188,7 +188,7 @@ const Team = () => (
                     <Avatar
                       size={'xl'}
                       src={
-                        'https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FTeam%2Fsantiago.png?alt=media&token=7e023900-d375-4818-bdf6-f6aa19279345'
+                        'https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FEquipo%2Fsantiago.png?alt=media&token=88b53f77-5075-4fcb-97d7-bd7b7a4c37aa'
                       }
                       alt={'Author'}
                       css={{
@@ -243,7 +243,7 @@ const Team = () => (
                     <Avatar
                       size={'xl'}
                       src={
-                        'https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FTeam%2Fandres.png?alt=media&token=a8789ada-3ec5-4a49-bc66-d68443de09cb'
+                        'https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FEquipo%2Fandres.png?alt=media&token=dee86cde-6697-4279-8cf5-f92f530193a9'
                       }
                       alt={'Author'}
                       css={{
@@ -298,7 +298,7 @@ const Team = () => (
                     <Avatar
                       size={'xl'}
                       src={
-                        'https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FTeam%2Fgustavo.png?alt=media&token=793e4b48-5cdf-4f85-a2e3-ff13b1ffe4a8'
+                        'https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FEquipo%2Fgustavo.png?alt=media&token=2b193a70-ab82-4bf7-8f0f-7ac4ed196a1e'
                       }
                       alt={'Author'}
                       css={{

@@ -46,7 +46,7 @@ import {
     );
   };
   
-  export default function KeyboardIntro() {
+  export default function Home() {
     return (
       <Container maxW={'6xl'}>
 
@@ -153,7 +153,7 @@ import {
 
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing="40px">
             <Card style={ {background: useColorModeValue('white', 'transparent')}, {boxShadow: useColorModeValue('5px 10px 18px #B8B8B8', '5px 10px 18px #000934')}}>
-                <Card.Img variant="top" src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2Ffondo.jpg?alt=media&token=225f791d-3ea4-4641-90a7-befbbc35f4cb" />
+                <Card.Img variant="top" src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FInicio%2FCard1.jpg?alt=media&token=4a5a5f16-13bd-46e8-aa4e-72028c3ce403" />
                 <Card.Body style={{color: 'black'}}>
                   <Card.Title>What Is Autism?</Card.Title>
                   <Card.Text>

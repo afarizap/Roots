@@ -45,7 +45,7 @@ import {
         w={'full'}
         h={'100vh'}
         backgroundImage={
-          'url(https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2Flanding.jpg?alt=media&token=806daca8-f428-4715-bc62-841b9b0a887f)'
+          'url(https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FInicio%2FHero.jpg?alt=media&token=f6d15ef0-07be-422c-a86a-dc1ecb0e82bd)'
         }
         backgroundSize={'cover'}
         backgroundPosition={'center center'}>
