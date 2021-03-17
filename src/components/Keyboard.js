@@ -19,9 +19,7 @@ if (words) {
 
       {words.map((words) => (
         <Box padding="0.5" borderRadius="10px" boxShadow="dark-lg" bg="#AFFEEB" wordBreak="break-word" minHeight="128px">
-          <Popover>
-            <PopoverTrigger>
-              <Button w="100%" h="100%" colorScheme="teal" variant="solid" onClick={console.log("click")}>
+          <Button w="100%" h="100%" colorScheme="teal" variant="solid" onClick={console.log("click")}>
                 <Box>
                   <Image
                     px="2"
@@ -33,14 +31,6 @@ if (words) {
                   <Center alignContent='center' m={1}>{words.word}</Center>
                 </Box>
               </Button>
-            </PopoverTrigger>
-            <PopoverContent>
-              <PopoverArrow />
-              <PopoverCloseButton />
-              <PopoverHeader>Pressed!</PopoverHeader>
-              <PopoverBody>{words.word}</PopoverBody>
-            </PopoverContent>
-          </Popover>
         </Box>
     ))}
     </SimpleGrid>
