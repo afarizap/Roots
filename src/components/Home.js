@@ -15,7 +15,7 @@ import {
     SimpleGrid,
     AspectRatio,
   } from '@chakra-ui/react';
-  import { FcDonate, FcAdvance, FcAbout } from 'react-icons/fc';
+  import { FcDonate, FcAdvance, FcAbout, FcAdvertising} from 'react-icons/fc';
   import {Button as Buttonet, Card, Accordion} from 'react-bootstrap'; // Replace component with another name
   import 'bootstrap/dist/css/bootstrap.min.css';
   import { Link } from "react-router-dom"
@@ -81,9 +81,8 @@ import {
               </Text>
             </Heading>
             <Text color={useColorModeValue('black', 'white')}>
-            Hemos estado trabajando en una herramienta que brinda grandes beneficios tanto a los niños con trastorno del espectro autista (TEA) como a sus padres o cuidadores al brindarles la capacidad de comunicarse con sus hijos.
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Nosotros hemos estado trabajando en una herramienta que entrega grandes beneficios a los niños con T.E.A y a sus padres o tutores dándole la posibilidad de comunicarse.
+            <br/>
             </Text>
             <Text as="em" color={useColorModeValue('grey', 'white')} fontWeight={400}>
               "No estás solo" -
@@ -157,8 +156,7 @@ import {
                 <Card.Body style={{color: 'black'}}>
                   <Card.Title>¿Qué es el Autismo?</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    El autismo o trastorno del espectro autista (T.E.A) se refiere a una amplia gama de condiciones que provocan retos en las habilidades sociales, comportamientos repetitivos y dificultades para comunicarse verbalmente y no verbalmente.
                   </Card.Text>
                   <Box pt="5">
                   <Buttonet variant="primary">Más</Buttonet>
@@ -171,8 +169,7 @@ import {
               <Card.Body style={{color: 'black'}}>
                 <Card.Title>¿Cuales son sus Signos?</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
+                  Se puede empezar a observar indicios a partir de los 2 o 3 años. Algunos problemas tempranos pueden aparecer desde antes. Desde el mes 18. Investigaciones han demostrado que una intervención temprana puede generar resultados positivos más adelante en la vida del niño
                 </Card.Text>
                 <Box pt="5">
                 <Buttonet variant="primary">Más</Buttonet>
@@ -185,8 +182,7 @@ import {
               <Card.Body style={{color: 'black'}}>
                 <Card.Title>Eventos</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
+                  La Liga Colombiana de Autismo es una organización con más de 11 años de experiencia como referencia para eventos, encuentros y congresos. Están para las necesidades y para dar igualdad de oportunidades a todas las personas
                 </Card.Text>
                 <Box pt="5">
                 <Buttonet variant="primary">Más</Buttonet>
@@ -278,7 +274,9 @@ import {
                 1. Mejora tus habilidades
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
-                  <Card.Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Card.Body>
+                  <Card.Body>
+                    Con Roots, el niño puede armar más de 100 frases
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
               <Card bg="transparent">
@@ -286,7 +284,9 @@ import {
                 2. Aprende nuevo Vocabulario
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
-                  <Card.Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Card.Body>
+                  <Card.Body>
+                  Con una base de datos más de 100 palabras entre objetos, acciones.
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
               <Card bg="transparent">
@@ -294,7 +294,9 @@ import {
                 3. Comunicate facilmente
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
-                  <Card.Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Card.Body>
+                  <Card.Body>
+                  Se puede seleccionar varias palabras para crear una oración completa
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
             </Accordion>
@@ -435,26 +437,33 @@ import {
               overflow={'hidden'}
               bg={useColorModeValue('blue.50', 'trasnparent')}
               color={useColorModeValue('black', 'white')}>
-          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+          <SimpleGrid columns={{ base: 1, md: 4 }} spacing={10}>
             <Feature
               icon={<Icon as={FcAdvance} w={10} h={10} />}
-              title={'Business Development'}
+              title={'El Desarrollo'}
               text={
-                'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                'Roots es una plataforma abierta licenciada con MIT y pueden encontrar su código en la página del proyecto'
               }
             />
             <Feature
               icon={<Icon as={FcDonate} w={10} h={10} />}
-              title={'Unlimited Donations'}
+              title={'Donaciones Ilimitadas'}
               text={
-                'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                'Si Te gustó este proyecto, todas las donaciones nos servirán  para darle mantenimiento a la página y podrás ver más información cómo ayudarnos en en el siguiente link'
               }
             />
             <Feature
               icon={<Icon as={FcAbout} w={10} h={10} />}
-              title={'Opportunity Spotting'}
+              title={'Las Oportunidades'}
               text={
-                'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+                'El TEA cambia vidas y nosotros queremos ayudarlos a superar esos retos de la mejor manera'
+              }
+            />
+            <Feature
+              icon={<Icon as={FcAdvertising} w={10} h={10} />}
+              title={'Soporte'}
+              text={
+                'Cualquier duda o si quieren contactarnos con alguna sugerencia, pueden enviar un correo a support@talkroots.tk'
               }
             />
           </SimpleGrid>

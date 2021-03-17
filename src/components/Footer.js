@@ -19,7 +19,7 @@ const Footer = () => (
 		mx="80px"
 		padding="30px"
 		alignContent="center"
-    	> 
+    	>
 			<Box wordBreak="break-word" minHeight="128px">
             	<Image
               	px="1"
@@ -32,28 +32,27 @@ const Footer = () => (
 
 			<Box wordBreak="break-word" minHeight="128px">
         		<Text alignContent='center' fontSize="xl">Acerca De Roots</Text>
-				<Text alignContent='center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
+				<Text alignContent='center'>
+        Roots es una plataforma que permite a los niños con autismo comunicarse con sus tutores y desarrollar habilidades de lenguaje
+        </Text>
       		</Box>
 
 			<Box  wordBreak="break-word" minHeight="128px">
 				<Text alignContent='center' fontSize="xl">Links</Text>
-				<Text><Link>rootblablabla.com</Link></Text> 
-				<Text><Link>Terms & Conditions</Link></Text> 
-				<Text><Link>Privacy Policy</Link></Text> 
+				<Text><Link href='http://www.talkroots.tk'>Roots</Link></Text>
+				<Text><Link>Terms & Conditions</Link></Text>
+				<Text><Link>Privacy Policy</Link></Text>
      		</Box>
 
 			<Box  wordBreak="break-word" minHeight="128px">
 				<Text alignContent='center' fontSize="xl">Herramientas</Text>
-				<Text><Link>businessgrowth.com</Link></Text> 
-				<Text><Link>Lorem.com</Link></Text> 
-				<Text><Link>blabla.net</Link></Text>
+				<Text><Link href='https://arasaac.org/'>Arasaac</Link></Text>
+				<Text><Link href='https://www.pictosonidos.com/'>PictoSonidos</Link></Text>
       		</Box>
 
 			<Box wordBreak="break-word" minHeight="128px">
 				<Text alignContent='center' fontSize="xl">Socios</Text>
-				<Text><Link>lorem.com</Link></Text> 
-				<Text><Link>lorem.com</Link></Text> 
-				<Text><Link>rootsbla.gov</Link></Text>
+				<Text><Link href = 'https://holbertonschool.com'>HolbertonSchool</Link></Text>
       		</Box>
 		</SimpleGrid>
 		<Center padding="20px">Copyright © 2021-{" "}
