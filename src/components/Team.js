@@ -32,9 +32,9 @@ const Team = () => (
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
-            Roots {' '}
+            Equipo {' '}
             <Text as={'span'} color={'#2EDDA7'}>
-            Team
+            Roots
             </Text>
             <Text
               color={useColorModeValue('gray.800', 'white')}
@@ -92,7 +92,7 @@ const Team = () => (
                       <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
                         Manuel Torres
                       </Heading>
-                      <Text color={'gray.500'}>Full-Stack Developer</Text>
+                      <Text color={'gray.500'}>Desarrollador Full-Stack</Text>
                     </Stack>
 
                     <Stack direction={'row'} justify={'center'} spacing={6}>
@@ -147,7 +147,7 @@ const Team = () => (
                       <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
                         Alison Quintero
                       </Heading>
-                      <Text color={'gray.500'}>Frontend Developer</Text>
+                      <Text color={'gray.500'}>Desarrolladora Front-End</Text>
                     </Stack>
 
                     <Stack direction={'row'} justify={'center'} spacing={6}>
@@ -202,7 +202,7 @@ const Team = () => (
                       <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
                         Santiago Mendieta
                       </Heading>
-                      <Text color={'gray.500'}>DevOps Developer</Text>
+                      <Text color={'gray.500'}>Desarrollador DevOps</Text>
                     </Stack>
 
                     <Stack direction={'row'} justify={'center'} spacing={6}>
@@ -257,7 +257,7 @@ const Team = () => (
                       <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
                         Andres Ariza
                       </Heading>
-                      <Text color={'gray.500'}>Back-End Developer</Text>
+                      <Text color={'gray.500'}>Desarrollador Back-End</Text>
                     </Stack>
 
                     <Stack direction={'row'} justify={'center'} spacing={6}>
@@ -312,7 +312,7 @@ const Team = () => (
                       <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
                         Gustavo Mejía
                       </Heading>
-                      <Text color={'gray.500'}>Back-End Developer</Text>
+                      <Text color={'gray.500'}>Desarrollador Back-End</Text>
                     </Stack>
 
                     <Stack direction={'row'} justify={'center'} spacing={6}>
