@@ -42,10 +42,10 @@ const initialFormData = Object.freeze({
       console.log(formData.word, formData.theme, formData.imgURL, formData.type)
        db.collection("pictos").add({
          word: formData.word,
-         type: formData.type,
+         category: formData.type,
+         theme: formData.theme,
          soundURL: "",
          imgURL: formData.imgURL,
-         categoty: formData.theme,
        })
        onClose()
     };
@@ -79,16 +79,16 @@ const initialFormData = Object.freeze({
                          name="type"
                          onChange={handleChange}
                          >
-                        <option value="Choose">Elegir</option>
-                        <option value="verbs">Sustantivo</option>
-                        <option value="nouns">Adjetivo</option>
-                        <option value="adjetives">Verbo</option>
-                        <option value="pronouns">Adverbio</option>
-                        <option value="verbs">Pronombre</option>
-                        <option value="nouns">Preposición</option>
-                        <option value="adjetives">Conjunción</option>
-                        <option value="pronouns">Interjección</option>
-                        <option value="pronouns">Artículo</option>
+                        <option value="Elegir">Elegir</option>
+                        <option value="Sustantivo">Sustantivo</option>
+                        <option value="Adjetivo">Adjetivo</option>
+                        <option value="Verbo">Verbo</option>
+                        <option value="Adverbio">Adverbio</option>
+                        <option value="Pronombre">Pronombre</option>
+                        <option value="Preposición">Preposición</option>
+                        <option value="Conjunción">Conjunción</option>
+                        <option value="Interjección">Interjección</option>
+                        <option value="Artículo">Artículo</option>
                   </Select>
                 </Box>
 
@@ -99,15 +99,15 @@ const initialFormData = Object.freeze({
                         name="theme"
                         onChange={handleChange}
                         >
-                        <option value="Choose">Elegir</option>
-                        <option value="School">Interacciones</option>
-                        <option value="Sports">Hogar</option>
-                        <option value="Things">Dormitorio</option>
-                        <option value="Bathroom">Baño</option>
-                        <option value="Places">Escuela</option>
-                        <option value="Animals">Comida</option>
-                        <option value="Household">Bebidas</option>
-                        <option value="School">Animales Acuaticos</option>
+                        <option value="Elegir">Elegir</option>
+                        <option value="Interacciones">Interacciones</option>
+                        <option value="Hogar">Hogar</option>
+                        <option value="Dormitorio">Dormitorio</option>
+                        <option value="Baño">Baño</option>
+                        <option value="Escuela">Escuela</option>
+                        <option value="Comida">Comida</option>
+                        <option value="Bebidas">Bebidas</option>
+                        <option value="Animales Acuaticos">Animales Acuaticos</option>
                   </Select>
                 </Box>
 

@@ -41,7 +41,7 @@ import {
           {icon}
         </Flex>
         <Text fontWeight={600}>{title}</Text>
-        <Text color={'black'}>{text}</Text>
+        <Text color={useColorModeValue('black', 'white')}>{text}</Text>
       </Stack>
     );
   };
@@ -305,7 +305,7 @@ import {
         <Stack
           align={'center'}
           spacing={{ base: 8, md: 10 }}
-          pb={{ base: 20, md: 28 }}
+          pt={{ base: 20, md: 27 }}
           direction={{ base: 'column', md: 'row' }}>
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Text
@@ -424,16 +424,17 @@ import {
             align={'center'}
             position={'relative'}
             w={'full'}
+            pt={{ base: 20, md: 28 }}
             pb="20">            
             <Box position={'relative'}
               height={'250px'}
               rounded={'2xl'}
-              boxShadow={'xl'}
+              boxShadow={'2xl'}
               padding={'30px'}
               width={'full'}
               overflow={'hidden'}
-              bg={useColorModeValue('blue.50', '#2EDDA7')}
-              color='black'>
+              bg={useColorModeValue('blue.50', 'trasnparent')}
+              color={useColorModeValue('black', 'white')}>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
             <Feature
               icon={<Icon as={FcAdvance} w={10} h={10} />}
