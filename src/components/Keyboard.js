@@ -94,7 +94,7 @@ if (words) {
       overflow="visible"
       border={2}>
 
-      {words.map((words) => (
+      {words.map((words, key=words.word) => (
         <Box padding="0.5" borderRadius="10px" boxShadow="dark-lg" bg="#AFFEEB" wordBreak="break-word" minHeight="128px">
          <Button w="100%" h="100%" colorScheme="teal" variant="solid" onClick={() => handleClikButton(words.word)}>
                 <Box>
