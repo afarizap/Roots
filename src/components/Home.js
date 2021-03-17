@@ -73,23 +73,23 @@ import {
               <Text
                 as={'span'}
                 position={'relative'}>
-                Express Yourself
+                Comunicate
               </Text>
               <br />
               <Text as={'span'} color={'#2EDDA7'}>
-              Through Roots
+              A Través De Roots
               </Text>
             </Heading>
             <Text color={useColorModeValue('black', 'white')}>
-            We have been working on a tool that provides great benefits both to children with autism spectrum disorder (ASD) and to their parents or caregivers by giving them the ability to communicate with their children.
+            Hemos estado trabajando en una herramienta que brinda grandes beneficios tanto a los niños con trastorno del espectro autista (TEA) como a sus padres o cuidadores al brindarles la capacidad de comunicarse con sus hijos.
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Text>
             <Text as="em" color={useColorModeValue('grey', 'white')} fontWeight={400}>
-              "You're not alone" -
+              "No estás solo" -
               
               <Text as={'span'} color={useColorModeValue('black', '#2EDDA7')}>
-              {' '}Roots Team
+              {' '}Comunidad Roots
               </Text>
             </Text>
           </Stack>
@@ -137,7 +137,7 @@ import {
               alignSelf={'center'}
               rounded={'md'}
               mb="-8">
-              Support
+              Soporte
             </Text>
             <Heading
               lineHeight={1.1}
@@ -147,7 +147,7 @@ import {
               <Text
                 as={'span'}
                 position={'relative'}>
-                Information
+                Información
               </Text>
             </Heading>
 
@@ -155,13 +155,13 @@ import {
             <Card style={ {background: useColorModeValue('white', 'transparent')}, {boxShadow: useColorModeValue('5px 10px 18px #B8B8B8', '5px 10px 18px #000934')}}>
                 <Card.Img variant="top" src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FInicio%2FCard1.jpg?alt=media&token=4a5a5f16-13bd-46e8-aa4e-72028c3ce403" />
                 <Card.Body style={{color: 'black'}}>
-                  <Card.Title>What Is Autism?</Card.Title>
+                  <Card.Title>¿Qué es el Autismo?</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
                   </Card.Text>
                   <Box pt="5">
-                  <Buttonet variant="primary">More</Buttonet>
+                  <Buttonet variant="primary">Más</Buttonet>
                   </Box>
                 </Card.Body>
             </Card>
@@ -169,13 +169,13 @@ import {
             <Card style={ {background: useColorModeValue('white', 'transparent')}, {boxShadow: useColorModeValue('5px 10px 18px #B8B8B8', '5px 10px 18px #000934')}}>
               <Card.Img variant="top" src="https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80" />
               <Card.Body style={{color: 'black'}}>
-                <Card.Title>Some Signs</Card.Title>
+                <Card.Title>¿Cuales son sus Signos?</Card.Title>
                 <Card.Text>
                   Some quick example text to build on the card title and make up the bulk of
                   the card's content.
                 </Card.Text>
                 <Box pt="5">
-                <Buttonet variant="primary">More</Buttonet>
+                <Buttonet variant="primary">Más</Buttonet>
                 </Box>
               </Card.Body>
             </Card>
@@ -183,13 +183,13 @@ import {
             <Card style={ {background: useColorModeValue('white', 'transparent')}, {boxShadow: useColorModeValue('5px 10px 18px #B8B8B8', '5px 10px 18px #000934')}}>
               <Card.Img variant="top" src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" />
               <Card.Body style={{color: 'black'}}>
-                <Card.Title>Events</Card.Title>
+                <Card.Title>Eventos</Card.Title>
                 <Card.Text>
                   Some quick example text to build on the card title and make up the bulk of
                   the card's content.
                 </Card.Text>
                 <Box pt="5">
-                <Buttonet variant="primary">More</Buttonet>
+                <Buttonet variant="primary">Más</Buttonet>
                 </Box>
               </Card.Body>
             </Card>
@@ -241,7 +241,7 @@ import {
             alignSelf={'flex-start'}
             rounded={'md'}
             mb="-9">
-            About
+            Acerca De
           </Text>
             <Heading
               lineHeight={1.1}
@@ -260,22 +260,22 @@ import {
                   bg: '#2EDDA7',
                   zIndex: -1,
                 }}>
-                Discover Benefits,
+                Diseñada para tí,
               </Text>
               <br />
               <Text as={'span'} color={'#2EDDA7'}>
-              Support Yourself
+              Explora sus Beneficios
               </Text>
             </Heading>
 
             
             <Accordion defaultActiveKey="0" style={{color: useColorModeValue('black', 'white')}}>
             <Text color={useColorModeValue('black', 'white')} mb="15px">
-            Here you can see some of the benefits you get when using Roots.
+            Aquí puede ver algunos de los beneficios que obtiene al usar Roots.
             </Text>
               <Card bg="transparent">
                 <Accordion.Toggle as={Card.Header} eventKey="0" style={{background: useColorModeValue('#50B3F2', '#5763E6')}}>
-                1. Improve your skills
+                1. Mejora tus habilidades
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
                   <Card.Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Card.Body>
@@ -283,7 +283,7 @@ import {
               </Card>
               <Card bg="transparent">
                 <Accordion.Toggle as={Card.Header} eventKey="1" style={{background: useColorModeValue('#538EFC', '#538EFC')}}>
-                2. Learn new vocabulary
+                2. Aprende nuevo Vocabulario
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
                   <Card.Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Card.Body>
@@ -291,7 +291,7 @@ import {
               </Card>
               <Card bg="transparent">
                 <Accordion.Toggle as={Card.Header} eventKey="2" style={{background: useColorModeValue('#5763E6', '#50B3F2')}}>
-                3. Communicate easily
+                3. Comunicate facilmente
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
                   <Card.Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Card.Body>
@@ -317,7 +317,7 @@ import {
             alignSelf={'flex-start'}
             rounded={'md'}
             mb="-9">
-            Demo
+            Demostración
           </Text>
             <Heading
               lineHeight={1.1}
@@ -336,15 +336,15 @@ import {
                   bg: '#2EDDA7',
                   zIndex: -1,
                 }}>
-                Learn More,
+                Aprende,
               </Text>
               <br />
               <Text as={'span'} color={'#2EDDA7'}>
-                Make Yourself Heard!
+                Hazte Escuchar!
               </Text>
             </Heading>
             <Text color={useColorModeValue('black', 'white')}>
-            Discover how to use Roots!
+            Descubre más acerca de esta herramienta!
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Text>
@@ -360,7 +360,7 @@ import {
                   colorScheme={'red'}
                   bg={'#2EDDA7'}
                   _hover={{ bg: 'red.500' }}>
-                  Get started
+                  Vamos!
                 </Button>
               </Link>
               <Button
@@ -369,7 +369,7 @@ import {
                 fontWeight={'normal'}
                 px={6}
                 leftIcon={<PlayIcon h={4} w={4} color={'gray.300'} />}>
-                How It Works
+                Como Funciona
               </Button>
             </Stack>
           </Stack>
