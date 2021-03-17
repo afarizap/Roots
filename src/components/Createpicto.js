@@ -102,6 +102,7 @@ const initialFormData = Object.freeze({
                         <option value="Acción">Elegir</option>
                         <option value="Interacciones">Interacciones</option>
                         <option value="Salud">Salud</option>
+                        <option value="Nuestro Cuerpo">Nuestro Cuerpo</option>
                         <option value="Hogar">Hogar</option>
                         <option value="Dormitorio">Dormitorio</option>
                         <option value="Baño">Baño</option>

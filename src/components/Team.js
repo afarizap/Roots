@@ -15,6 +15,7 @@ import {
   createIcon,
   useBreakpointValue,
   SimpleGrid,
+  Link,
   } from '@chakra-ui/react';
 
   import {Button as StyleButton} from 'react-bootstrap'; // Replace component with another name
@@ -43,7 +44,7 @@ const Team = () => (
               mt="30px"
               fontSize={useBreakpointValue({ base: '1xl', md: '2xl' })}
               fontFamily={'body'}>
-              We have a strong and knowledgeable as our team. So here are the men and women who helped make this project possible.
+              Tenemos un gran conocimiento como equipo entre hombres y mujeres para hacer este proyecto posible
             </Text>
           </Heading>
           <Stack
@@ -51,7 +52,7 @@ const Team = () => (
 
           <SimpleGrid
                 gap={5}
-                columns={5}
+                columns={{ base: 1, sm: 2, md: 5 }}
                 overflow="visible"
                 border={2}
                 >
@@ -89,25 +90,30 @@ const Team = () => (
 
                   <Box p={6}>
                     <Stack spacing={0} align={'center'} mb={5}>
-                      <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
+                      <Heading fontSize={'xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
                         Manuel Torres
                       </Heading>
-                      <Text color={'gray.500'}>Desarrollador Full-Stack</Text>
+                      <Text color={'gray.500'}>Desarrollador Back-End</Text>
                     </Stack>
 
-                    <Stack direction={'row'} justify={'center'} spacing={6}>
-                      <Stack spacing={0} align={'center'}>
-                        <Text fontWeight={600}>23k</Text>
-                        <Text fontSize={'sm'} color={'gray.500'}>
-                          Followers
-                        </Text>
-                      </Stack>
-                      <Stack spacing={0} align={'center'}>
-                        <Text fontWeight={600}>23k</Text>
-                        <Text fontSize={'sm'} color={'gray.500'}>
-                          Followers
-                        </Text>
-                      </Stack>
+                    <Stack mt={8} direction={'row'} spacing={4}>
+                      <Button
+                        flex={1}
+                        fontSize={'sm'}
+                        rounded={'full'}
+                        bg={'blue.400'}
+                        color={'white'}
+                        boxShadow={
+                          '0px 1px 25px -5px rgb(66 153 225 / 30%), 0 10px 10px -5px rgb(66 153 225 / 30%)'
+                        }
+                        _hover={{
+                          bg: 'blue.500',
+                        }}
+                        _focus={{
+                          bg: 'blue.500',
+                        }}>
+                        <Link href="https://twitter.com/ManuelCtrl" isExternal>Twitter</Link>
+                      </Button>
                     </Stack>
                   </Box>
                   </Box>
@@ -144,25 +150,30 @@ const Team = () => (
 
                   <Box p={7}>
                     <Stack spacing={0} align={'center'} mb={5}>
-                      <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
+                      <Heading fontSize={'xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
                         Alison Quintero
                       </Heading>
                       <Text color={'gray.500'}>Desarrolladora Front-End</Text>
                     </Stack>
 
-                    <Stack direction={'row'} justify={'center'} spacing={6}>
-                      <Stack spacing={0} align={'center'}>
-                        <Text fontWeight={600}>23k</Text>
-                        <Text fontSize={'sm'} color={'gray.500'}>
-                          Followers
-                        </Text>
-                      </Stack>
-                      <Stack spacing={0} align={'center'}>
-                        <Text fontWeight={600}>23k</Text>
-                        <Text fontSize={'sm'} color={'gray.500'}>
-                          Followers
-                        </Text>
-                      </Stack>
+                    <Stack mt={8} direction={'row'} spacing={4}>
+                      <Button
+                        flex={1}
+                        fontSize={'sm'}
+                        rounded={'full'}
+                        bg={'blue.400'}
+                        color={'white'}
+                        boxShadow={
+                          '0px 1px 25px -5px rgb(66 153 225 / 30%), 0 10px 10px -5px rgb(66 153 225 / 30%)'
+                        }
+                        _hover={{
+                          bg: 'blue.500',
+                        }}
+                        _focus={{
+                          bg: 'blue.500',
+                        }}>
+                        <Link href="https://twitter.com/AlisonQuinter17" isExternal>Twitter</Link>
+                      </Button>
                     </Stack>
                   </Box>
                 </Box>
@@ -199,25 +210,30 @@ const Team = () => (
 
                   <Box p={6}>
                     <Stack spacing={0} align={'center'} mb={5}>
-                      <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
+                      <Heading fontSize={'xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
                         Santiago Mendieta
                       </Heading>
                       <Text color={'gray.500'}>Desarrollador DevOps</Text>
                     </Stack>
 
-                    <Stack direction={'row'} justify={'center'} spacing={6}>
-                      <Stack spacing={0} align={'center'}>
-                        <Text fontWeight={600}>23k</Text>
-                        <Text fontSize={'sm'} color={'gray.500'}>
-                          Followers
-                        </Text>
-                      </Stack>
-                      <Stack spacing={0} align={'center'}>
-                        <Text fontWeight={600}>23k</Text>
-                        <Text fontSize={'sm'} color={'gray.500'}>
-                          Followers
-                        </Text>
-                      </Stack>
+                    <Stack mt={8} direction={'row'} spacing={4}>
+                      <Button
+                        flex={1}
+                        fontSize={'sm'}
+                        rounded={'full'}
+                        bg={'blue.400'}
+                        color={'white'}
+                        boxShadow={
+                          '0px 1px 25px -5px rgb(66 153 225 / 30%), 0 10px 10px -5px rgb(66 153 225 / 30%)'
+                        }
+                        _hover={{
+                          bg: 'blue.500',
+                        }}
+                        _focus={{
+                          bg: 'blue.500',
+                        }}>
+                        <Link href="https://twitter.com/sto_stat" isExternal>Twitter</Link>
+                      </Button>
                     </Stack>
                   </Box>
                 </Box>
@@ -254,25 +270,30 @@ const Team = () => (
 
                   <Box p={6}>
                     <Stack spacing={0} align={'center'} mb={5}>
-                      <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
+                      <Heading fontSize={'xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
                         Andres Ariza
                       </Heading>
                       <Text color={'gray.500'}>Desarrollador Back-End</Text>
                     </Stack>
 
-                    <Stack direction={'row'} justify={'center'} spacing={6}>
-                      <Stack spacing={0} align={'center'}>
-                        <Text fontWeight={600}>23k</Text>
-                        <Text fontSize={'sm'} color={'gray.500'}>
-                          Followers
-                        </Text>
-                      </Stack>
-                      <Stack spacing={0} align={'center'}>
-                        <Text fontWeight={600}>23k</Text>
-                        <Text fontSize={'sm'} color={'gray.500'}>
-                          Followers
-                        </Text>
-                      </Stack>
+                    <Stack mt={8} direction={'row'} spacing={4}>                      
+                      <Button
+                        flex={1}
+                        fontSize={'sm'}
+                        rounded={'full'}
+                        bg={'blue.400'}
+                        color={'white'}
+                        boxShadow={
+                          '0px 1px 25px -5px rgb(66 153 225 / 30%), 0 10px 10px -5px rgb(66 153 225 / 30%)'
+                        }
+                        _hover={{
+                          bg: 'blue.500',
+                        }}
+                        _focus={{
+                          bg: 'blue.500',
+                        }}>
+                        <Link href="https://twitter.com/ariza_rocks" isExternal>Twitter</Link>
+                      </Button>
                     </Stack>
                   </Box>
                 </Box>
@@ -309,25 +330,30 @@ const Team = () => (
 
                   <Box p={6}>
                     <Stack spacing={0} align={'center'} mb={5}>
-                      <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
+                      <Heading fontSize={'xl'} fontWeight={500} fontFamily={'body'} color={useColorModeValue('white', 'gray.800')}>
                         Gustavo Mejía
                       </Heading>
-                      <Text color={'gray.500'}>Desarrollador Back-End</Text>
+                      <Text color={'gray.500'}>Desarrollador</Text>
                     </Stack>
 
-                    <Stack direction={'row'} justify={'center'} spacing={6}>
-                      <Stack spacing={0} align={'center'}>
-                        <Text fontWeight={600}>23k</Text>
-                        <Text fontSize={'sm'} color={'gray.500'}>
-                          Followers
-                        </Text>
-                      </Stack>
-                      <Stack spacing={0} align={'center'}>
-                        <Text fontWeight={600}>23k</Text>
-                        <Text fontSize={'sm'} color={'gray.500'}>
-                          Followers
-                        </Text>
-                      </Stack>
+                    <Stack mt={8} direction={'row'} spacing={4}>                      
+                      <Button
+                        flex={1}
+                        fontSize={'sm'}
+                        rounded={'full'}
+                        bg={'blue.400'}
+                        color={'white'}
+                        boxShadow={
+                          '0px 1px 25px -5px rgb(66 153 225 / 30%), 0 10px 10px -5px rgb(66 153 225 / 30%)'
+                        }
+                        _hover={{
+                          bg: 'blue.500',
+                        }}
+                        _focus={{
+                          bg: 'blue.500',
+                        }}>
+                        <Link href="https://twitter.com/im_tavo" isExternal>Twitter</Link>
+                      </Button>
                     </Stack>
                   </Box>
                 </Box>
