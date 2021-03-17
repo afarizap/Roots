@@ -47,7 +47,7 @@ const initialFormData = Object.freeze({
          imgURL: formData.imgURL,
          categoty: formData.theme,
        })
-
+       onClose()
     };
 
     const { isOpen, onOpen, onClose } = useDisclosure()
