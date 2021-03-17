@@ -31,7 +31,7 @@ const Footer = () => (
       		</Box>
 
 			<Box wordBreak="break-word" minHeight="128px">
-        		<Text alignContent='center' fontSize="xl">About Roots</Text>
+        		<Text alignContent='center' fontSize="xl">Acerca De Roots</Text>
 				<Text alignContent='center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Text>
       		</Box>
 
@@ -43,14 +43,14 @@ const Footer = () => (
      		</Box>
 
 			<Box  wordBreak="break-word" minHeight="128px">
-				<Text alignContent='center' fontSize="xl">Tools</Text>
+				<Text alignContent='center' fontSize="xl">Herramientas</Text>
 				<Text><Link>businessgrowth.com</Link></Text> 
 				<Text><Link>Lorem.com</Link></Text> 
 				<Text><Link>blabla.net</Link></Text>
       		</Box>
 
 			<Box wordBreak="break-word" minHeight="128px">
-				<Text alignContent='center' fontSize="xl">Partners</Text>
+				<Text alignContent='center' fontSize="xl">Socios</Text>
 				<Text><Link>lorem.com</Link></Text> 
 				<Text><Link>lorem.com</Link></Text> 
 				<Text><Link>rootsbla.gov</Link></Text>

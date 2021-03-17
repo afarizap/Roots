@@ -10,7 +10,7 @@ function Keyboard() {
 
 if (words) {
   return (
-    <Container maxW={'6xl'}>
+    <Container maxW={'6xl'} mb="100px">
     <SimpleGrid gap={3}
       columns={12}
       minChildWidth={128}
