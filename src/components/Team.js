@@ -32,9 +32,9 @@ const Team = () => (
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}>
-            Roots {' '}
+            Equipo {' '}
             <Text as={'span'} color={'#2EDDA7'}>
-            Team
+            Roots
             </Text>
             <Text
               color={useColorModeValue('gray.800', 'white')}

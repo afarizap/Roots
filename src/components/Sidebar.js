@@ -13,6 +13,7 @@ import { Box, Button,
     } from '@chakra-ui/react';
 import { box } from 'tweetnacl';
 
+
 function Sidebar() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [placement, setPlacement] = React.useState("left")
