@@ -44,7 +44,7 @@ const Team = () => (
               mt="30px"
               fontSize={useBreakpointValue({ base: '1xl', md: '2xl' })}
               fontFamily={'body'}>
-              Tenemos un gran conocimiento como equipo entre hombres y mujeres para hacer este proyecto posible
+              Tenemos grandes habilidades y fortalezas como equipo, siempre buscaremos brindarte la mejor experiencia
             </Text>
           </Heading>
           <Stack
