@@ -35,7 +35,7 @@ import {
               fontWeight={700}
               lineHeight={1.2}
               id="js-rotating"
-              fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
+              fontSize={useBreakpointValue({ base: '4xl', md: '5xl' })}>
               EXPRESATE!
             </Text>
             <Text

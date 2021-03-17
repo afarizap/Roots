@@ -1,8 +1,10 @@
 import React from 'react';
-import { Box, Center, Button,  Image, SimpleGrid, Container, Textarea } from '@chakra-ui/react';
+import { Box, Center, Button,  Image, SimpleGrid, Container, Textarea, Grid, GridItem } from '@chakra-ui/react';
 
 import { db } from '../features/firebase';
 import { useCollectionData } from 'react-firebase-hooks/firestore'
+import Sidebar from './Sidebar';
+import Createpicto from './Createpicto';
 
 
 function Keyboard() {
@@ -67,7 +69,7 @@ function Keyboard() {
            overflow="visible"
            border={2}
          > 
-         <Box m={4} borderRadius="10px" boxShadow="dark-lg" bg="#E6E6E6" wordBreak="break-word" h="50%" >
+         <Box borderRadius="10px" boxShadow="dark-lg" bg="#E6E6E6" wordBreak="break-word" h="130px" color="black">
            <Textarea borderRadius="10px" h="100%" placeholder="Type something..." variant="ghost" onChange={handleChange} value={textData.value.join(' ').toLowerCase()} onClick={() => handleSubmit(words.word)}/>
          </Box>
        </SimpleGrid>
@@ -77,10 +79,15 @@ function Keyboard() {
 
    }
 
+
 if (words) {
   return (
-    <Container maxW={'6xl'}>
+    <Container maxW={'6xl'} mb="100px">
     <TextBox />
+    <Grid templateRows="repeat(1, 1fr)" templateColumns="repeat(12, 1fr)" gap={4} my="4">
+      <GridItem colSpan={6}><Sidebar /></GridItem>
+      <GridItem colSpan={6}><Createpicto /></GridItem>
+    </Grid>
     <SimpleGrid gap={3}
       columns={12}
       minChildWidth={128}

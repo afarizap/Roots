@@ -14,11 +14,11 @@ import {
     useColorModeValue,
     SimpleGrid,
     AspectRatio,
+    Link,
   } from '@chakra-ui/react';
   import { FcDonate, FcAdvance, FcAbout, FcAdvertising} from 'react-icons/fc';
   import {Button as Buttonet, Card, Accordion} from 'react-bootstrap'; // Replace component with another name
   import 'bootstrap/dist/css/bootstrap.min.css';
-  import { Link } from "react-router-dom"
 
   interface FeatureProps {
     title: string;
@@ -69,19 +69,19 @@ import {
             <Heading
               lineHeight={1.1}
               fontWeight={600}
-              fontSize={{ base: '2xl', sm: '3xl', lg: '5xl' }}>
+              fontSize={{ base: '1xl', sm: '2xl', lg: '4xl' }}>
               <Text
                 as={'span'}
                 position={'relative'}>
-                Comunicate
+                Comunicación Aumentativa
               </Text>
               <br />
               <Text as={'span'} color={'#2EDDA7'}>
-              A Través De Roots
+              Una Nueva Alternativa
               </Text>
             </Heading>
             <Text color={useColorModeValue('black', 'white')}>
-            Nosotros hemos estado trabajando en una herramienta que entrega grandes beneficios a los niños con T.E.A y a sus padres o tutores dándole la posibilidad de comunicarse.
+            Sabemos que existe una enorme barrera en la comunicación de niños con trastorno del espectro Autista y sus cuidadores, es por eso que hemos decidido crear una herramienta que pueda satisfacer con estas necesidades dándote un soporte al permitir la comunicación autónoma de tu hijo por medio de pictogramas, para ello tendrás disponible el tablero Roots en el cual con solo pulsar algunos botones podrás comenzar a comunicarte con el mundo fácilmente. 
             <br/>
             </Text>
             <Text as="em" color={useColorModeValue('grey', 'white')} fontWeight={400}>
@@ -275,7 +275,7 @@ import {
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
                   <Card.Body>
-                    Con Roots, el niño puede armar más de 100 frases
+                    Con Roots, desarrollarás tus habilidades lingüísticas y aprenderás a expresarte por tí mismo.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -295,7 +295,7 @@ import {
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
                   <Card.Body>
-                  Se puede seleccionar varias palabras para crear una oración completa
+                  Navegar y utilizar esta aplicación resulta realmente sencillo gracias a sus funciones inteligentes y a un práctico diseño.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -429,7 +429,7 @@ import {
             pt={{ base: 20, md: 28 }}
             pb="20">            
             <Box position={'relative'}
-              height={'250px'}
+              height={'300px'}
               rounded={'2xl'}
               boxShadow={'2xl'}
               padding={'30px'}
@@ -442,14 +442,14 @@ import {
               icon={<Icon as={FcAdvance} w={10} h={10} />}
               title={'El Desarrollo'}
               text={
-                'Roots es una plataforma abierta licenciada con MIT y pueden encontrar su código en la página del proyecto'
+                'Roots es una plataforma abierta licenciada con MIT.'
               }
             />
             <Feature
               icon={<Icon as={FcDonate} w={10} h={10} />}
               title={'Donaciones Ilimitadas'}
               text={
-                'Si Te gustó este proyecto, todas las donaciones nos servirán  para darle mantenimiento a la página y podrás ver más información cómo ayudarnos en en el siguiente link'
+                'Si te gustó éste proyecto, puedes aportar voluntariamente, éstas donaciones nos servirán para darle mantenimiento a ésta plataforma.'
               }
             />
             <Feature
@@ -461,9 +461,9 @@ import {
             />
             <Feature
               icon={<Icon as={FcAdvertising} w={10} h={10} />}
-              title={'Soporte'}
+              title={'Contacto'}
               text={
-                'Cualquier duda o si quieren contactarnos con alguna sugerencia, pueden enviar un correo a support@talkroots.tk'
+                'Para contactarnos pueden dirigirse a EQUIPO o pueden enviar un correo a support@talkroots.tk'
               }
             />
           </SimpleGrid>

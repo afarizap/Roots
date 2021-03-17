@@ -8,8 +8,6 @@ import Hero from './components/Hero';
 import Keyboard from './components/Keyboard';
 import Home from './components/Home';
 import Divtext from './components/Divtext';
-import Sidebar from './components/Sidebar';
-import Createpicto from './components/Createpicto';
 import customTheme from './components/styles/theme';
 import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import {
@@ -53,12 +51,6 @@ function App() {
 
               <Route exact path="/keyboard"> {/* Keyboard Page */}
                 <Divtext />
-                <Container maxW={'6xl'}>
-                  <Grid templateRows="repeat(1, 1fr)" templateColumns="repeat(12, 1fr)" gap={4} my="4">
-                    <GridItem colSpan={6}><Sidebar /></GridItem>
-                    <GridItem colSpan={6}><Createpicto /></GridItem>
-                  </Grid>
-                </Container>
                 <Keyboard />
               </Route>
             </Switch>
