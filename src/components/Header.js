@@ -71,10 +71,10 @@ const MenuLinks = ({ isOpen }) => {
         direction={['column', 'row', 'row', 'row']}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="/home">HOME</MenuItem>
-        <MenuItem to="/aboutus">ABOUT US</MenuItem>
-        <MenuItem to="/team">TEAM</MenuItem>
-        <MenuItem to="/keyboard">KEYBOARD</MenuItem>
+        <MenuItem to="/home">INICIO</MenuItem>
+        <MenuItem to="/aboutus">ACERCA DE NOSOTROS</MenuItem>
+        <MenuItem to="/team">EQUIPO</MenuItem>
+        <MenuItem to="/keyboard">TABLERO</MenuItem>
 
         <ColorModeSwitcher />
         <MenuItem to="/login" isLast>
@@ -87,7 +87,7 @@ const MenuLinks = ({ isOpen }) => {
               bg: ['#325860'],
             }}
           >
-            LOGIN
+            INICIAR SESION
           </Button>
         </MenuItem>
         <MenuItem to="/register" isLast>
@@ -100,7 +100,7 @@ const MenuLinks = ({ isOpen }) => {
               bg: ['#325860'],
             }}
           >
-            REGISTER
+            REGISTRARSE
           </Button>
         </MenuItem>
       </Stack>
