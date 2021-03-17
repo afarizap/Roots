@@ -22,7 +22,7 @@ function Sidebar() {
       <>
       <Box>
         <Button width="100%" colorScheme="green" onClick={onOpen}>
-          Descubrir
+          Filtrar
         </Button>
         <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay>
