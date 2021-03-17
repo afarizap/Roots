@@ -47,10 +47,6 @@ function App() {
                 <Home />
               </Route>
 
-              <Route exact path="/aboutus"> {/* About Us Page */}
-                <AboutUs />
-              </Route>
-
               <Route exact path="/team"> {/* Team Page */}
                 <Team />
               </Route>

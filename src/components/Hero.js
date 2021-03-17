@@ -62,7 +62,7 @@ import {
               lineHeight={1.2}
               id="js-rotating"
               fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-              YOU'RE NOT ALONE
+              EXPRESATE!
             </Text>
             <Text
               color={'white'}
@@ -78,7 +78,7 @@ import {
                   rounded={'full'}
                   color={'white'}
                   _hover={{ bg: 'blue.500' }}>
-                  Show me more
+                  Muestrame Más
                 </Button>
               </Link>
 
@@ -88,7 +88,7 @@ import {
                   rounded={'full'}
                   color={'white'}
                   _hover={{ bg: 'whiteAlpha.500' }}>
-                    Try board  
+                    Probar ROOTS
                 </Button>
               </Link>
               

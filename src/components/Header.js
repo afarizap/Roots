@@ -72,7 +72,6 @@ const MenuLinks = ({ isOpen }) => {
         pt={[4, 4, 0, 0]}
       >
         <MenuItem to="/home">INICIO</MenuItem>
-        <MenuItem to="/aboutus">ACERCA DE NOSOTROS</MenuItem>
         <MenuItem to="/team">EQUIPO</MenuItem>
         <MenuItem to="/keyboard">TABLERO</MenuItem>
 
