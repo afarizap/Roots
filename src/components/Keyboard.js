@@ -20,6 +20,9 @@ function Keyboard() {
   // const [words] = useCollectionData(db.collection('pictos').where("category", "==", "Articulo"));
   //interjeccion
   // const [words] = useCollectionData(db.collection('pictos').where("category", "==", "Interjección"));
+  //Animales Acuaticos
+  // const [words] = useCollectionData(db.collection('pictos').where("theme", "==", "Animales Acuaticos"));
+  
   
   const [words] = useCollectionData(db.collection('pictos'));
 

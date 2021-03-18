@@ -79,7 +79,7 @@ const initialFormData = Object.freeze({
                          name="type"
                          onChange={handleChange}
                          >
-                        <option value="Elegir">Elegir</option>
+                        <option value="">Elegir</option>
                         <option value="Sustantivo">Sustantivo</option>
                         <option value="Adjetivo">Adjetivo</option>
                         <option value="Verbo">Verbo</option>
@@ -99,7 +99,7 @@ const initialFormData = Object.freeze({
                         name="theme"
                         onChange={handleChange}
                         >
-                        <option value="Acción">Elegir</option>
+                        <option value="">Elegir</option>
                         <option value="Interacciones">Interacciones</option>
                         <option value="Salud">Salud</option>
                         <option value="Nuestro Cuerpo">Nuestro Cuerpo</option>
