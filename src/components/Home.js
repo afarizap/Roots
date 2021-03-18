@@ -167,9 +167,9 @@ import {
             <Card style={ {background: useColorModeValue('white', 'transparent')}, {boxShadow: useColorModeValue('5px 10px 18px #B8B8B8', '5px 10px 18px #000934')}}>
               <Card.Img variant="top" src="https://images.unsplash.com/photo-1526662092594-e98c1e356d6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80" />
               <Card.Body style={{color: 'black'}}>
-                <Card.Title>¿Cuales son sus Signos?</Card.Title>
+                <Card.Title>¿Cuáles son sus Signos?</Card.Title>
                 <Card.Text>
-                  Se puede empezar a observar indicios a partir de los 2 o 3 años. Algunos problemas tempranos pueden aparecer desde antes. Desde el mes 18. Investigaciones han demostrado que una intervención temprana puede generar resultados positivos más adelante en la vida del niño
+                  Se puede empezar a observar indicios a partir de los 2 o 3 años. Algunos problemas tempranos pueden aparecer desde antes. Desde el mes 18. Investigaciones han demostrado que una intervención temprana puede generar resultados positivos más adelante en la vida del niño.
                 </Card.Text>
                 <Box pt="5">
                 <Buttonet variant="primary">Más</Buttonet>
@@ -267,11 +267,11 @@ import {
             
             <Accordion defaultActiveKey="0" style={{color: useColorModeValue('black', 'white')}}>
             <Text color={useColorModeValue('black', 'white')} mb="15px">
-            Aquí puede ver algunos de los beneficios que obtiene al usar Roots.
+            Aquí podrás ver algunos de los beneficios que obtienes al usar Roots.
             </Text>
-              <Card bg="transparent">
-                <Accordion.Toggle as={Card.Header} eventKey="0" style={{background: useColorModeValue('#50B3F2', '#5763E6')}}>
-                1. Mejora tus habilidades
+              <Card bg="transparent" as="abbr">
+                <Accordion.Toggle as={Card.Header} eventKey="0" style={{background: useColorModeValue('#0b986a', '#4dc493')}}>
+                + Mejora tus habilidades
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
                   <Card.Body>
@@ -280,8 +280,8 @@ import {
                 </Accordion.Collapse>
               </Card>
               <Card bg="transparent">
-                <Accordion.Toggle as={Card.Header} eventKey="1" style={{background: useColorModeValue('#538EFC', '#538EFC')}}>
-                2. Aprende nuevo Vocabulario
+                <Accordion.Toggle as={Card.Header} eventKey="1" style={{background: useColorModeValue('#32ae7e', '#32ae7e')}}>
+                + Aprende nuevo Vocabulario
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
                   <Card.Body>
@@ -290,8 +290,8 @@ import {
                 </Accordion.Collapse>
               </Card>
               <Card bg="transparent">
-                <Accordion.Toggle as={Card.Header} eventKey="2" style={{background: useColorModeValue('#5763E6', '#50B3F2')}}>
-                3. Comunicate facilmente
+                <Accordion.Toggle as={Card.Header} eventKey="2" style={{background: useColorModeValue('#4dc493', '#0b986a')}}>
+                + Comunicate facilmente
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="2">
                   <Card.Body>
@@ -348,7 +348,7 @@ import {
             <Text color={useColorModeValue('black', 'white')}>
             Descubre más acerca de esta herramienta!
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            En este corto video te mostraremos sus principales funcionalidades y algunos de los beneficios más resaltantes que tiene para ti.
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
@@ -366,12 +366,13 @@ import {
                 </Button>
               </Link>
               <Button
-                rounded={'full'}
-                size={'lg'}
-                fontWeight={'normal'}
-                px={6}
-                leftIcon={<PlayIcon h={4} w={4} color={'gray.300'} />}>
-                Como Funciona
+              px={6}
+              rounded={'full'}
+              size={'lg'}
+              fontWeight={'normal'}
+              px={6}
+              leftIcon={<PlayIcon h={4} w={4} color={'gray.300'} />}>
+                <Link href="https://www.youtube.com/watch?v=1aPUyiU04vE" isExternal>Como Funciona</Link>
               </Button>
             </Stack>
           </Stack>
@@ -384,10 +385,10 @@ import {
             
             <Box
               position={'relative'}
-              height={'400px'}
+              height="337px"
               rounded={'xl'}
               boxShadow={'2xl'}
-              width={'full'}
+              width={'600px'}
               overflow={'hidden'}>
               <IconButton
                 aria-label={'Play Button'}
@@ -406,10 +407,11 @@ import {
                 align={'center'}
                 w={'100%'}
                 h={'100%'}
-                ratio={1}>
+                ratio={1}
+                >
                   <iframe
                     title="Demo"
-                    src="https://www.youtube.com/embed/lRpxecLkUHQ"
+                    src="https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FInicio%2FROOTSS.mp4?alt=media&token=ad71be50-80f5-4d39-b3af-7710c9c26871"
                     allowFullScreen/>
                 </AspectRatio>
             </Box>
