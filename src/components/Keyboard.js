@@ -19,7 +19,9 @@ function Keyboard() {
   //Articulo
   // const [words] = useCollectionData(db.collection('pictos').where("category", "==", "Articulo"));
   //interjeccion
-  const [words] = useCollectionData(db.collection('pictos').where("category", "==", "Interjección"));
+  // const [words] = useCollectionData(db.collection('pictos').where("category", "==", "Interjección"));
+  
+  const [words] = useCollectionData(db.collection('pictos'));
 
 
   let WordsArray = [];
