@@ -1,5 +1,7 @@
 import React from 'react';
 import { Box, Center, Button,  Image, SimpleGrid, Container, Textarea, Grid, GridItem } from '@chakra-ui/react';
+import {Button as Buttonet} from 'react-bootstrap'; // Replace component with another name
+import {Link as Next} from "react-router-dom";
 
 import { db } from '../features/firebase';
 import { useCollectionData } from 'react-firebase-hooks/firestore'
@@ -101,7 +103,7 @@ function Keyboard() {
 
 if (words) {
   return (
-    <Container maxW={'6xl'} mb="100px">
+    <Container maxW={'6xl'} mb="30px">
     <TextBox />
     <Grid templateRows="repeat(1, 1fr)" templateColumns="repeat(12, 1fr)" gap={4} my="4">
       <GridItem colSpan={6}><Sidebar /></GridItem>
@@ -130,6 +132,9 @@ if (words) {
         </Box>
     ))}
     </SimpleGrid>
+      <Next to="/team">
+          <Box align="center" py="40px"><Buttonet variant="secondary">Atrás</Buttonet></Box>
+        </Next>
     </Container>
   );
 }

@@ -86,7 +86,7 @@ const MenuLinks = ({ isOpen }) => {
               bg: ['#325860'],
             }}
           >
-            INICIAR SESION
+            INICIAR SESIÓN
           </Button>
         </MenuItem>
         <MenuItem to="/register" isLast>

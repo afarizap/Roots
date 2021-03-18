@@ -19,6 +19,7 @@ import {
   import { FcDonate, FcAdvance, FcAbout, FcAdvertising} from 'react-icons/fc';
   import {Button as Buttonet, Card, Accordion} from 'react-bootstrap'; // Replace component with another name
   import 'bootstrap/dist/css/bootstrap.min.css';
+  import {Link as Next} from "react-router-dom";
 
   interface FeatureProps {
     title: string;
@@ -63,7 +64,7 @@ import {
             bg={useColorModeValue('red.50', 'transparent')}
             alignSelf={'flex-start'}
             rounded={'md'}
-            mb="-6">
+            mb="-5">
             Intro
           </Text>
             <Heading
@@ -135,7 +136,7 @@ import {
               bg={useColorModeValue('red.50', 'transparent')}
               alignSelf={'center'}
               rounded={'md'}
-              mb="-8">
+              mb="-5">
               Soporte
             </Text>
             <Heading
@@ -236,7 +237,7 @@ import {
             bg={useColorModeValue('red.50', 'transparent')}
             alignSelf={'flex-start'}
             rounded={'md'}
-            mb="-9">
+            mb="-5">
             Acerca De
           </Text>
             <Heading
@@ -318,7 +319,7 @@ import {
             bg={useColorModeValue('red.50', 'transparent')}
             alignSelf={'flex-start'}
             rounded={'md'}
-            mb="-9">
+            mb="-5">
             Demostración
           </Text>
             <Heading
@@ -353,7 +354,7 @@ import {
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
-              <Link to="/keyboard">
+              <Next to="/keyboard">
                 <Button
                   rounded={'full'}
                   size={'lg'}
@@ -364,7 +365,7 @@ import {
                   _hover={{ bg: 'red.500' }}>
                   Vamos!
                 </Button>
-              </Link>
+              </Next>
               <Button
               px={6}
               rounded={'full'}
@@ -428,10 +429,9 @@ import {
             align={'center'}
             position={'relative'}
             w={'full'}
-            pt={{ base: 20, md: 28 }}
-            pb="20">            
+            pt={{ base: 20, md: 28 }}>            
             <Box position={'relative'}
-              height={'300px'}
+              height={'100%'}
               rounded={'2xl'}
               boxShadow={'2xl'}
               padding={'30px'}
@@ -471,6 +471,10 @@ import {
           </SimpleGrid>
         </Box>
           </Flex>
+
+          <Next to="/team">
+            <Box align="center" py="40px"><Buttonet variant="secondary">Siguiente</Buttonet></Box>
+          </Next>
 
       </Container>
     );

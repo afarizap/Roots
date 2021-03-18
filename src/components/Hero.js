@@ -1,8 +1,6 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Head from 'next/head';
 import { Link } from "react-router-dom"
-import PropTypes from "prop-types"
 import {
     Stack,
     Flex,
@@ -36,7 +34,7 @@ import {
               lineHeight={1.2}
               id="js-rotating"
               fontSize={useBreakpointValue({ base: '4xl', md: '5xl' })}>
-              EXPRESATE!
+              ¡EXPRÉSATE!
             </Text>
             <Text
               color={'white'}
@@ -52,7 +50,7 @@ import {
                   rounded={'full'}
                   color={'white'}
                   _hover={{ bg: 'blue.500' }}>
-                  Muestrame Más
+                  Muéstrame Más
                 </Button>
               </Link>
 
