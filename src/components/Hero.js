@@ -41,7 +41,7 @@ import {
               fontWeight={300}
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: '1xl', md: '2xl' })}>
-              Roots es una plataforma que permite a los niños con autismo comunicarse con sus tutores y desarrollar habilidades de lenguaje
+              Roots es una plataforma que permite a los niños dentro del espectro del autismo comunicarse con sus tutores y desarrollar habilidades de lenguaje
             </Text>
             <Stack direction={'row'}>
               <Link to="/team">

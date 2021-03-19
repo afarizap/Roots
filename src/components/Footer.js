@@ -33,7 +33,7 @@ const Footer = () => (
 				<Box wordBreak="break-word" minHeight="128px">
 					<Text alignContent='center' fontSize="xl">Acerca De Roots</Text>
 					<Text alignContent='center'>
-			Roots es una herramienta que permite que niños con autismo puedan desarrollar habilidades de lenguaje y la comunicación con sus tutores.
+			Roots es una herramienta que permite que niños dentro del espectro del autismo puedan desarrollar habilidades de lenguaje y la comunicación con sus tutores.
 			</Text>
 				</Box>
 
