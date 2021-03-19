@@ -50,7 +50,7 @@ import {
                   rounded={'full'}
                   color={'white'}
                   _hover={{ bg: 'blue.500' }}>
-                  Muéstrame Más
+                  Ver Más
                 </Button>
               </Link>
 
@@ -60,7 +60,7 @@ import {
                   rounded={'full'}
                   color={'white'}
                   _hover={{ bg: 'whiteAlpha.500' }}>
-                    Probar ROOTS
+                  Probar ROOTS
                 </Button>
               </Link>
               

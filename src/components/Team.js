@@ -73,7 +73,7 @@ const Team = () => (
                     h={'120px'}
                     w={'full'}
                     src={
-                      'https://images.unsplash.com/photo-1612865547334-09cb8cb455da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+                      'https://pbs.twimg.com/profile_banners/1204807289435250690/1606277971/1500x500'
                     }
                     objectFit={'cover'}
                   />
@@ -134,7 +134,7 @@ const Team = () => (
                     h={'120px'}
                     w={'full'}
                     src={
-                      'https://images.unsplash.com/photo-1612865547334-09cb8cb455da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+                      'https://pbs.twimg.com/profile_banners/700898088840368128/1557417338/1500x500'
                     }
                     objectFit={'cover'}
                   />
@@ -195,7 +195,7 @@ const Team = () => (
                     h={'120px'}
                     w={'full'}
                     src={
-                      'https://images.unsplash.com/photo-1612865547334-09cb8cb455da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+                      'https://pbs.twimg.com/profile_banners/1187466205612789760/1586810560/1500x500'
                     }
                     objectFit={'cover'}
                   />
@@ -256,7 +256,7 @@ const Team = () => (
                     h={'120px'}
                     w={'full'}
                     src={
-                      'https://images.unsplash.com/photo-1612865547334-09cb8cb455da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+                      'https://pbs.twimg.com/profile_banners/700684899162820609/1585355856/1500x500'
                     }
                     objectFit={'cover'}
                   />
@@ -317,7 +317,7 @@ const Team = () => (
                     h={'120px'}
                     w={'full'}
                     src={
-                      'https://images.unsplash.com/photo-1612865547334-09cb8cb455da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+                      'https://pbs.twimg.com/profile_banners/117183297/1593459196/1500x500'
                     }
                     objectFit={'cover'}
                   />
@@ -386,73 +386,73 @@ const Team = () => (
             </Text>
           </Heading>
 
+        <Stack alignItems="center">
         <CardGroup className="acordeon">
-        <Card style={{ width: '18rem' }} className="tecno">
+        <Card style={{ width: '18rem' }} className="card">
         <Image
           className="tecno-img-top"
           src='https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FEquipo%2FTecnolog%C3%ADas%2FFirebase.svg?alt=media&token=2daafd65-217b-4682-a91d-b35fe1827f85'
         />
-          <Card.Body class="tecno-img-overlay">
+          <Card.Body class="card-img-overlay">
             <Card.Title className="tecno-title">Firebase</Card.Title>
             <Card.Text className="tecno-text">
-              Esta herramienta brinda multiples funcionalidades como manejo de bases de datos y Hosting.
+              Es un BaaS "Backend as a Service" que simplifica la creación y el acceso a la base de datos. 
             </Card.Text>
             <a href="#" class="stretched-link"></a>
           </Card.Body>
         </Card>
 
-        <Card style={{ width: '18rem' }} className="tecno">
+        <Card style={{ width: '18rem' }} className="card">
         <Image
           className="tecno-img-top"
                     src='https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FEquipo%2FTecnolog%C3%ADas%2FReact.svg?alt=media&token=68e95dc4-32ab-44e6-8c54-74911db0d94a'
                   />
-          <Card.Body class="tecno-img-overlay">
+          <Card.Body class="card-img-overlay">
             <Card.Title className="tecno-title">React</Card.Title>
             <Card.Text className="tecno-text">
-              Es una biblioteca Javascript de código abierto
+              Es una librería JavaScript de código abierto que ayuda a crear interfaces de usuarios interactivas.
             </Card.Text>
             <a href="#" class="stretched-link"></a>
           </Card.Body>
         </Card>
 
-        <Card style={{ width: '18rem' }} className="tecno">
+        <Card style={{ width: '18rem' }} className="card">
         <Image
           className="tecno-img-top"
                     src='https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FEquipo%2FTecnolog%C3%ADas%2FChakraUI.svg?alt=media&token=2b7e49b9-bbd7-4ba6-93a4-0c12b62885e6'
                   />
-          <Card.Body class="tecno-img-overlay">
+          <Card.Body className="card-img-overlay">
             <Card.Title className="tecno-title">Chakra UI</Card.Title>
             <Card.Text className="tecno-text">
-              Es una biblioteca de componentes moderna para React.
+              Es una librería que ayuda a crear bloques de componentes necesarios para renderizar nuestra Web App de React.
             </Card.Text>
             <a href="#" class="stretched-link"></a>
           </Card.Body>
         </Card>
 
-        <Card style={{ width: '18rem' }} className="tecno">
+        <Card style={{ width: '18rem' }} className="card">
         <Image
           className="tecno-img-top"
                     src='https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FEquipo%2FTecnolog%C3%ADas%2FTextospeech.svg?alt=media&token=912cf982-a704-4809-a22e-d5a4b30ddc1e'
                   />
-          <Card.Body class="tecno-img-overlay">
+          <Card.Body class="card-img-overlay">
             <Card.Title className="tecno-title">Text to Speech</Card.Title>
             <Card.Text className="tecno-text">
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
+              La API de Web Speech tiene una interfaz de controlador principal para la síntesis de voz que permite recibir texto y reproducirlo desde el altavoz de un dispositivo. 
             </Card.Text>
             <a href="#" class="stretched-link"></a>
           </Card.Body>
         </Card>
 
-        <Card style={{ width: '18rem' }} className="tecno">
+        <Card style={{ width: '18rem' }} className="card">
         <Image
-          className="card-img-top"
+          className="tecno-img-top"
                     src='https://firebasestorage.googleapis.com/v0/b/roots-5fa0f.appspot.com/o/images%2FEquipo%2FTecnolog%C3%ADas%2FBoostrap.svg?alt=media&token=b3828c08-a405-408a-abee-b5448c37d31c'
                   />
-          <Card.Body class="tecno-img-overlay">
+          <Card.Body class="card-img-overlay">
             <Card.Title className="tecno-title">Boostrap</Card.Title>
             <Card.Text className="tecno-text">
-              Biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño.
+              Es una librería multiplataforma o conjunto de herramientas de código abierto para diseño.
             </Card.Text>
             <a href="#" class="stretched-link"></a>
           </Card.Body>
@@ -466,6 +466,7 @@ const Team = () => (
               <Next to="/keyboard"><Buttonet variant="secondary">Siguiente</Buttonet></Next>
             </Box>
         </Stack>
+      </Stack>
     </Container>
 );
 

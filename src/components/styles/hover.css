@@ -1,31 +1,31 @@
-.tecno {
+.card {
     display: flex;
     flex-wrap: wrap;
   }
   
-  .acordeon > .tecno {
+  .acordeon > .card {
     flex: 1 1 100%;
     transition: flex 500ms;
     height: 250px;
     margin-bottom: 0;
   }
   
-  .acordeon > .tecno:hover {
-    background-color: #ffffff;
+  .acordeon > .card:hover {
+    background-color: rgba(0, 0, 0, 0);
   }
   
-  .tecno-img-overlay {
+  .card-img-overlay {
     color: white;
     background-color: rgba(0, 0, 0, 0.801);
     opacity: 1;
     transition: opacity 200ms;
   }
   
-  .tecno:hover .tecno-img-top {
+  .card:hover .tecno-img-top {
     filter: grayscale(0);
   }
   
-  .tecno:hover .tecno-img-overlay {
+  .card:hover .card-img-overlay {
     opacity: 0;
   }
   
@@ -47,20 +47,20 @@
   }
 
   @media (min-width: 576px) {
-    .acordeon > .tecno:hover {
+    .acordeon > .card:hover {
       flex-grow: 5;
     }
-    .acordeon > .tecno {
+    .acordeon > .card {
       flex-basis: 35%;
     }
   }
   
   @media (min-width: 992px) {
-    .acordeon > .tecno:hover {
+    .acordeon > .card:hover {
       flex-grow: 1.2;
     }
-    .acordeon > .tecno {
+    .acordeon > .card {
       flex-basis: 0%;
-      height: 200px;
+      height: 250px;
     }
   }

@@ -11,7 +11,7 @@ const NavBar = props => {
 
   return (
     <NavBarContainer {...props}>
-      <Logo w="200px" ColorModeSwitcher={['white', 'white', '#25383C', '#25383C']}
+      <Logo w="200px" ColorModeSwitcher={['white', 'white', 'white', 'white']}
       />
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
@@ -116,7 +116,7 @@ const NavBarContainer = ({ children, ...props }) => {
       wrap="wrap"
       w="100%"
       p={8}
-      bg={['#197C5E', '#197C5E', 'transparent', 'transparent']}
+      bg={['#02B0A2', '#02B0A2', 'transparent', 'transparent']}
       my="-25px"
       // position="fixed"
       // top="1"
