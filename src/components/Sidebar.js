@@ -10,6 +10,7 @@ import { Box, Button,
   useDisclosure,
   FormLabel,
   Select,
+  useColorModeValue,
     } from '@chakra-ui/react';
 import { box } from 'tweetnacl';
 
@@ -35,7 +36,7 @@ function Sidebar() {
                         name="type"
                         bg="tomato"
                         borderColor="tomato"
-                        color="white"
+                        color={useColorModeValue('black', 'white')}
                         placeholder="Categorías"
                          >
                         <option value="verbs">Sustantivo</option>
