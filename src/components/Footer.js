@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link, Box, Center, SimpleGrid, Image, Text, Container} from '@chakra-ui/react';
 
-import { ColorModeSwitcher } from './styles/ColorModeSwitcher';
-
 const Footer = () => (
 	<Container maxW={'6xl'}>
 		<Box

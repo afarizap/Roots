@@ -10,22 +10,7 @@ import Createpicto from './Createpicto';
 
 
 function Keyboard() {
-  // all
-  // const [words] = useCollectionData(db.collection('pictos'));
-  //Verbo
-  // const [words] = useCollectionData(db.collection('pictos').where("category", "==", "Verbo"));
-  //Sustantivo
-  // const [words] = useCollectionData(db.collection('pictos').where("category", "==", "Sustantivo"));
-  //Pronombre
-  // const [words] = useCollectionData(db.collection('pictos').where("category", "==", "Pronombre"));
-  //Articulo
-  // const [words] = useCollectionData(db.collection('pictos').where("category", "==", "Articulo"));
-  //interjeccion
-  // const [words] = useCollectionData(db.collection('pictos').where("category", "==", "Interjección"));
-  //Animales Acuaticos
-  // const [words] = useCollectionData(db.collection('pictos').where("theme", "==", "Animales Acuaticos"));
-  
-  
+
   const [words] = useCollectionData(db.collection('pictos'));
 
 

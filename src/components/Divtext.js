@@ -1,19 +1,5 @@
 import React from 'react';
-import {Textarea, Heading,
-  Avatar,
-  Box,
-  Center,
-  Image,
-  Flex,
-  Container,
-  Text,
-  Button,
-  Stack,
-  Icon,
-  useColorModeValue,
-  createIcon,
-  useBreakpointValue,
-  SimpleGrid,} from '@chakra-ui/react';
+import { Heading,  Box, Container, Text, Stack, SimpleGrid } from '@chakra-ui/react';
 
 const Divtext = () => (
     

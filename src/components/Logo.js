@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, Text, Image } from '@chakra-ui/react';
-import { Link } from "react-router-dom"
+import { Box, Text } from '@chakra-ui/react';
 
 export default function Logo(props) {
   return (
