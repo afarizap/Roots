@@ -2,22 +2,19 @@ import React from 'react';
 import { Box, Button,
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   useDisclosure,
-  FormLabel,
   Select,
   useColorModeValue,
     } from '@chakra-ui/react';
-import { box } from 'tweetnacl';
 
 
 function Sidebar() {
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const [placement, setPlacement] = React.useState("left")
+    const [placement] = React.useState("left")
   
     return (
       <>

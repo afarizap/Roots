@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Team from './components/Team';
-import AboutUs from './components/AboutUs';
 import Hero from './components/Hero';
 import Keyboard from './components/Keyboard';
 import Home from './components/Home';
@@ -12,19 +11,7 @@ import customTheme from './components/styles/theme';
 import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import {
   ChakraProvider,
-  ThemeProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  Image,
-  Center,
-  ButtonGroup,
-  Stack,
-  GridItem,
-  Container,
+  Box
 } from '@chakra-ui/react';
 
 function App() {

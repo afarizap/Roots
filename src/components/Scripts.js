@@ -1,6 +1,3 @@
-import React from "react"
-import WithBackgroundImage from "./Hero"
-
 /* Rotating Text - Morphtext */
 (function($) {
     "use strict"; 

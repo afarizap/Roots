@@ -1,18 +1,5 @@
 import React from 'react';
-import {Textarea, Heading,
-  Box,
-  Center,
-  Image,
-  Flex,
-  Container,
-  Text,
-  Button,
-  Stack,
-  Icon,
-  useColorModeValue,
-  createIcon,
-  useBreakpointValue,
-  SimpleGrid,} from '@chakra-ui/react';
+import { Box, Container, Heading, Stack, Text } from '@chakra-ui/react';
 
 const AboutUs = () => (
     

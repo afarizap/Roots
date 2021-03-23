@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Box, Flex, Text, Button, Stack, Image} from '@chakra-ui/react';
+import { Link, Box, Flex, Text, Button, Stack } from '@chakra-ui/react';
 
 import Logo from './Logo';
 import { ColorModeSwitcher } from './styles/ColorModeSwitcher';
