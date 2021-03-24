@@ -6,6 +6,12 @@ Sabemos que existe una enorme barrera en la comunicación de niños con trastorn
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+1. Clone this repository
+2. run `npm install`
+3. run `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
