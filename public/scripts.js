@@ -10,4 +10,4 @@
 		}
 		hidePreloader();
 	});
-})(jQuery);
+})();
