@@ -1,5 +1,16 @@
 import React from 'react';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from 'react-router-dom';
+
+import { ChakraProvider, Box } from '@chakra-ui/react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Team from './components/Team';
@@ -8,18 +19,10 @@ import Keyboard from './components/Keyboard';
 import Home from './components/Home';
 import Divtext from './components/Divtext';
 import customTheme from './components/styles/theme';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect
-} from 'react-router-dom';
-import { ChakraProvider, Box } from '@chakra-ui/react';
 
 function App() {
   return (
     <div>
-
       <ChakraProvider theme={customTheme}>
         <Box>
           <Router>
@@ -32,7 +35,6 @@ function App() {
                 <Hero />
                 <Home />
               </Route>
-
               <Route exact path="/team"> {/* Team Page */}
                 <Team />
               </Route>

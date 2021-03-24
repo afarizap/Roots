@@ -38,7 +38,6 @@ function Keyboard() {
     msg.text = e;
     msg.lang = 'es';
     speechSynthesis.speak(msg);
-    // WordsArray = [];
   }
 
   const initialTextData = Object.freeze({
