@@ -20,7 +20,6 @@ function Keyboard() {
   const handleClikButton = (e) => {
     WordsArray.push(e)
     var msg = new SpeechSynthesisUtterance();
-    var voices = window.speechSynthesis.getVoices();
     msg.voiceURI = 'native';
     msg.volume = 1; // 0 to 1
     msg.rate = 0.8; // 0.1 to 10
@@ -32,7 +31,6 @@ function Keyboard() {
 
   const handleClickText = (e) => {
     var msg = new SpeechSynthesisUtterance();
-    var voices = window.speechSynthesis.getVoices();
     msg.voiceURI = 'native';
     msg.volume = 1; // 0 to 1
     msg.rate = 0.8; // 0.1 to 10
