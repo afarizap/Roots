@@ -1,10 +1,24 @@
 import React from 'react';
-import { Box, Center, Button, Image, SimpleGrid, Container, Textarea, Grid, GridItem } from '@chakra-ui/react';
-import { Button as Buttonet } from 'react-bootstrap'; // Replace component with another name
 import { Link as Next } from "react-router-dom";
+
+
+import {
+ Box,
+ Center,
+ Button,
+ Image,
+ SimpleGrid,
+ Container,
+ Textarea,
+ Grid,
+ GridItem 
+} from '@chakra-ui/react';
+
+import { Button as Buttonet } from 'react-bootstrap'; // Replace component with another name
 
 import { db } from '../features/firebase';
 import { useCollectionData } from 'react-firebase-hooks/firestore'
+
 import Sidebar from './Sidebar';
 import Createpicto from './Createpicto';
 
