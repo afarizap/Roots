@@ -1,82 +1,93 @@
-# Roots Autism Project
+# Roots' Project - ![shieldLicence]
 
-## Introduction
+> Roots, you are not alone
 
-Sabemos que existe una enorme barrera en la comunicación de niños con trastorno del espectro Autista y sus cuidadores, es por eso que hemos decidido crear una herramienta que pueda satisfacer con estas necesidades dándote un soporte al permitir la comunicación autónoma de tu hijo por medio de pictogramas, para ello tendrás disponible el tablero Roots en el cual con solo pulsar algunos botones podrás comenzar a comunicarte con el mundo fácilmente.
+## The Platform
 
-[Link to deployed site](https://talkroots.tk/home)
+Roots is an app focused on children within the autism spectrum, mostly those
+who have severe language difficulties, because of that,  they struggle to
+effectively communicate through verbal language.<br/>
+We have researched and  explored augmentative and alternative communication
+solutions to help this children express their thoughts, needs, desires or
+ideas.
+
+You can access into the platfrom by [talkroots.tk](https://talkroots.tk), and
+some aticles about the proyect
+ - [Article 1][art1]
+ - [Article 2][art2]
+ - [Article 3][art3]
 
 ## Installation
 
-1. Clone this repository
-2. run `npm install`
-3. run `npm start`
+Roots can be access by the url, but you can also install the webpage locally.
 
-## Available Scripts
+### Prerequisites
+Install nodejs
+```console
+foo@bar$ sudo snap install node --classic
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Install Repository
+Now let's clone the repository and install the application
 
-In the project directory, you can run:
+```console
+foo@bar$ git clone https://github.com/afarizap/roots
+foo@bar$ cd roots
+foo@bar$ npm install
+foo@bar$ npm start
+```
+this would take some time then be patient
 
-### `npm start`
+React will start the program and you would open your explorer to check the
+[localhost](http://localhost:5000) page
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+http://localhost:5000
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Usage
+Go to **Tablero**
 
-### `npm test`
+![gifGotoTab]
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There are more than 100 differents words and you can select it to create
+sentences
 
-### `npm run build`
+![gifSelectWords]
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can filter the images and upload your own pictogram
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![gifFeatures1]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Also we did a demostration
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[![demoImg]][demoVid]
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contribute
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+If you want to help us to grown, fork this repository and create a pull request
+with your changes. Or go to the Issues, and create a new item with the request 
+Feature flag
 
-## Learn More
+## Related projects
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licence
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is Open with the [MIT][license] license
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+<!--Links-->
+[art1]:https://medium.com
+[art2]:https://medium.com
+[art3]:https://medium.com
+[demoVid]:https://www.youtube.com/watch?v=1aPUyiU04vE
+[demoImg]:https://img.youtube.com/vi/1aPUyiU04vE/hqdefault.jpg
+[gifGotoTab]:public/assets/demo-tablero.gif
+[gifSelectWords]:public/assets/demo-selectwords.gif
+[gifFeatures1]:public/assets/demo-features1.gif
+[shieldLicence]:https://img.shields.io/github/license/afarizap/roots
+[license]:LICENSE
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
