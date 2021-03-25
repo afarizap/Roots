@@ -371,7 +371,6 @@ import {
               rounded={'full'}
               size={'lg'}
               fontWeight={'normal'}
-              px={6}
               leftIcon={<PlayIcon h={4} w={4} color={'gray.300'} />}>
                 <Link href="https://www.youtube.com/watch?v=1aPUyiU04vE" isExternal>Como Funciona</Link>
               </Button>
