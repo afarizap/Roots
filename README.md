@@ -16,6 +16,13 @@ some aticles about the proyect
  - [Article 1][art1]
  - [Article 2][art2]
  - [Article 3][art3]
+ 
+Author's Linkedin:
+[Alison Quintero](https://www.linkedin.com/in/alison-quintero-26a05619a/)
+[Manuel Torres ](https://www.linkedin.com/in/manuel-torres-v)
+[Gustavo Mejía](https://www.linkedin.com/in/gamejia/)
+[Santiago Mendieta](http://linkedin.com/in/santiago-mendieta-b7a268203)
+[Andres Ariza](https://www.linkedin.com/in/arizarocks/)
 
 ## Installation
 
