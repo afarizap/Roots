@@ -89,7 +89,7 @@ This project is Open with the [MIT][license] license
 <!--Links-->
 [art1]:https://medium.com
 [art2]:https://medium.com
-[art3]:https://medium.com
+[art3]:https://gamejia.medium.com/roots-final-project-55fc45b05e95
 [demoVid]:https://www.youtube.com/watch?v=1aPUyiU04vE
 [demoImg]:https://img.youtube.com/vi/1aPUyiU04vE/hqdefault.jpg
 [gifGotoTab]:public/assets/demo-tablero.gif
