@@ -4,7 +4,7 @@
 
 Sabemos que existe una enorme barrera en la comunicación de niños con trastorno del espectro Autista y sus cuidadores, es por eso que hemos decidido crear una herramienta que pueda satisfacer con estas necesidades dándote un soporte al permitir la comunicación autónoma de tu hijo por medio de pictogramas, para ello tendrás disponible el tablero Roots en el cual con solo pulsar algunos botones podrás comenzar a comunicarte con el mundo fácilmente.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Link to deployed site](https://talkroots.tk/home)
 
 ## Installation
 
@@ -13,6 +13,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. run `npm start`
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
