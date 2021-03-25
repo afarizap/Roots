@@ -36,7 +36,7 @@ foo@bar$ cd roots
 foo@bar$ npm install
 foo@bar$ npm start
 ```
-this would take some time then be patient
+this would take some time, be patient
 
 React will start the program and you would open your explorer to check the
 [localhost](http://localhost:5000) page
@@ -60,7 +60,7 @@ You can filter the images and upload your own pictogram
 ![gifFeatures1]
 
 
-Also we did a demostration
+Also we did a demo!
 
 [![demoImg]][demoVid]
 
