@@ -1,70 +1,93 @@
-# Roots Autism Project
+# Roots' Project - ![shieldLicence]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Roots, you are not alone
 
-## Available Scripts
+## The Platform
 
-In the project directory, you can run:
+Roots is an app focused on children within the autism spectrum, mostly those
+who have severe language difficulties, because of that,  they struggle to
+effectively communicate through verbal language.<br/>
+We have researched and  explored augmentative and alternative communication
+solutions to help this children express their thoughts, needs, desires or
+ideas.
 
-### `npm start`
+You can access into the platfrom by [talkroots.tk](https://talkroots.tk), and
+some aticles about the proyect
+ - [Article 1][art1]
+ - [Article 2][art2]
+ - [Article 3][art3]
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Roots can be access by the url, but you can also install the webpage locally.
 
-### `npm test`
+### Prerequisites
+Install nodejs
+```console
+foo@bar$ sudo snap install node --classic
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Install Repository
+Now let's clone the repository and install the application
 
-### `npm run build`
+```console
+foo@bar$ git clone https://github.com/afarizap/roots
+foo@bar$ cd roots
+foo@bar$ npm install
+foo@bar$ npm start
+```
+this would take some time then be patient
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React will start the program and you would open your explorer to check the
+[localhost](http://localhost:5000) page
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+http://localhost:5000
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
+Go to **Tablero**
 
-### `npm run eject`
+![gifGotoTab]
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+There are more than 100 differents words and you can select it to create
+sentences
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![gifSelectWords]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You can filter the images and upload your own pictogram
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![gifFeatures1]
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Also we did a demostration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[![demoImg]][demoVid]
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Contribute
 
-### Analyzing the Bundle Size
+If you want to help us to grown, fork this repository and create a pull request
+with your changes. Or go to the Issues, and create a new item with the request 
+Feature flag
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Related projects
 
-### Making a Progressive Web App
+## Licence
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+This project is Open with the [MIT][license] license
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+<!--Links-->
+[art1]:https://medium.com
+[art2]:https://medium.com
+[art3]:https://medium.com
+[demoVid]:https://www.youtube.com/watch?v=1aPUyiU04vE
+[demoImg]:https://img.youtube.com/vi/1aPUyiU04vE/hqdefault.jpg
+[gifGotoTab]:public/assets/demo-tablero.gif
+[gifSelectWords]:public/assets/demo-selectwords.gif
+[gifFeatures1]:public/assets/demo-features1.gif
+[shieldLicence]:https://img.shields.io/github/license/afarizap/roots
+[license]:LICENSE
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
