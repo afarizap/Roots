@@ -4,6 +4,13 @@ import { Link, Box, Flex, Text, Button, Stack } from '@chakra-ui/react';
 import Logo from './Logo';
 import { ColorModeSwitcher } from './styles/ColorModeSwitcher';
 
+/**
+ * The Navbar
+ * 
+ * Adapts responsively to the size of the display.
+ * For smaller sizes switch to a hamburger menu.
+ *  
+ * @return     {Functional Component}  { Nabvar } */
 const NavBar = props => {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -19,6 +26,11 @@ const NavBar = props => {
   );
 };
 
+/**
+ * Add the Close icon.
+ *
+ * @return     {svg icon}  { A close icon when the navbar is a hamburguer menu }
+ */
 const CloseIcon = () => (
   <svg width="24" viewBox="0 0 18 18">
     <title>Close</title>
@@ -29,6 +41,11 @@ const CloseIcon = () => (
   </svg>
 );
 
+/**
+ * Return a hamburguer icon
+ *
+ * @return     {svg icon}  { A hamburguer icon }
+ */
 const MenuIcon = () => (
   <svg
     width="24px"
@@ -40,6 +57,13 @@ const MenuIcon = () => (
   </svg>
 );
 
+/**
+ * Toggle the menu
+ *
+ * @param      {State>}  arg1.toggle  The toggle
+ * @param      {prop}  arg1.isOpen  Indicates if open
+ * @return     {Functional component}  { A icon component depending on whether the menu is open or closed }
+ */
 const MenuToggle = ({ toggle, isOpen }) => {
   return (
     <Box display={{ base: 'block', md: 'none' }} onClick={toggle}>
@@ -48,7 +72,14 @@ const MenuToggle = ({ toggle, isOpen }) => {
   );
 };
 
-const MenuItem = ({ children, isLast, to = '/', ...rest }) => {
+/**
+ * Populate the menu with the items
+ *
+ * @param      {String}  arg1.children  The children submenu
+ * @param      {Array}   arg1.rest      The rest
+ * @return     {Funcional component>}  { the menu items list  component}
+ */
+const MenuItem = ({ children, to = '/', ...rest }) => {
   return (
     <Link href={to}>
       <Text display="block" {...rest}>
@@ -58,6 +89,12 @@ const MenuItem = ({ children, isLast, to = '/', ...rest }) => {
   );
 };
 
+/**
+ * Set each menu to its corresponding page or function.
+ *
+ * @param      {String}  arg1.isOpen  Indicates if open
+ * @return     {Functional Component}  { The menu items and its linked page or function }
+ */
 const MenuLinks = ({ isOpen }) => {
   return (
     <Box
@@ -107,6 +144,7 @@ const MenuLinks = ({ isOpen }) => {
   );
 };
 
+
 const NavBarContainer = ({ children, ...props }) => {
   return (
     <Flex
@@ -118,9 +156,7 @@ const NavBarContainer = ({ children, ...props }) => {
       p={8}
       bg={['#02B0A2', '#02B0A2', 'transparent', 'transparent']}
       my="-25px"
-      // position="fixed"
       // top="1"
-      {...props}
     >
       {children}
     </Flex>
