@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link as Next } from "react-router-dom";
 
-
 import {
  Box,
  Center,
@@ -23,6 +22,13 @@ import Sidebar from './Sidebar';
 import Createpicto from './Createpicto';
 
 
+/**
+ * { Return dynamically retrieved pictogram cards from the database. }
+ *
+ * Each card is placed inside a grid. 
+ * Clicking on a card plays its corresponding sound and the word is
+  added to an array that can then be played by clicking on the Textarea
+ */
 function Keyboard() {
 
   const [words] = useCollectionData(db.collection('pictos'));
@@ -43,6 +49,11 @@ function Keyboard() {
     speechSynthesis.speak(msg);
   }
 
+  /**
+   * { Synthesizes the voice corresponding to the clicked word }
+   *
+   * @param      {<event>}  e       { onClick event }
+   */
   const handleClickText = (e) => {
     var msg = new SpeechSynthesisUtterance();
     msg.voiceURI = 'native';
@@ -59,9 +70,15 @@ function Keyboard() {
     value: WordsArray,
   })
 
+  
   const TextBox = () => {
     const [textData, updateTextData] = React.useState(initialTextData);
 
+    /**
+     * { Update data on the click event }
+     *
+     * @param      {<event>}  e       { onClick event }
+     */
     const handleChange = (e) => {
       updateTextData({
         ...textData,
@@ -69,6 +86,11 @@ function Keyboard() {
       });
     };
 
+    /**
+     * {Submit a pictograma data to the database on form submit }
+     *
+    * @param      {<event>}  e       { onClick event }
+     */
     const handleSubmit = (e) => {
       console.log("this", textData);
       console.log("play audio please")
